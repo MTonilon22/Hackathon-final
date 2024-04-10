@@ -126,10 +126,7 @@
     <div
       class="flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] custom-sm:gap-3 custom-sm:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-evenly"
     >
-      <Loading v-if="properties.length === 0" />
-
       <Products
-        v-else
         class=""
         v-for="(property, index) in properties"
         :property_id="property.property_id"
