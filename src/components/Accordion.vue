@@ -71,8 +71,8 @@
               id=""
             >
               <option value="">{{ item.data }}</option>
-              <option value="">China</option>
-              <option value="">Japan</option>
+              <option value="">Manila</option>
+              <option value="">Davao City</option>
             </select>
           </div>
           <!-- if type is range -->

@@ -12,9 +12,7 @@
     <!--  -->
 
     <!-- Footer -->
-    <div>
-      <Footer v-if="!$route.meta.hideNavAndFooter" />
-    </div>
+
     <!--  -->
   </div>
 </template>

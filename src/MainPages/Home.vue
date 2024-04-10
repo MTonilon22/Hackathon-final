@@ -1,52 +1,11 @@
 <template>
-  <div
-    class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] bg-slate-400 -z-10 cursor-pointer"
-  >
-    <swiper-container
-      class="w-full"
-      :cssMode="true"
-      loop="true"
-      :centeredSlides="true"
-      :autoplay="{
-        delay: 3500,
-        disableOnInteraction: false,
-      }"
-      :pagination="false"
-      :navigation="false"
-    >
-      <swiper-slide
-        ><div class="flex justify-center items-center">
-          <img
-            class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px]"
-            src="../assets/s1.jpg"
-            alt=""
-          /></div
-      ></swiper-slide>
-      <swiper-slide
-        ><div class="flex justify-center items-center">
-          <img
-            class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px]"
-            src="../assets/s2.jpg"
-            alt=""
-          /></div
-      ></swiper-slide>
-      <swiper-slide
-        ><div class="flex justify-center items-center">
-          <img
-            class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px]"
-            src="../assets/s3.jpg"
-            alt=""
-          /></div
-      ></swiper-slide>
-    </swiper-container>
-  </div>
-  <div class="flex text-[#E67E23] mb-2 mt-7">
+  <div class="flex text-[#E67E23] mb-2 mt-4">
     <div
-      class="flex w-[16%] text-lg pl-3 ml-3 font-poppins font-bold custom-sm:hidden sm:hidden md:hidden lg:block"
+      class="flex w-[16%] text-lg pl-3 ml-3 font-poppins font-bold custom-sm:hidden sm:hidden md:hidden lg:block items-center justify-center my-auto"
     >
       Search Filter
     </div>
-    <div class="flex w-[84%] text-lg pl-5 font-poppins font-bold">
+    <div class="flex w-[84%] text-lg pl-5 font-poppins font-bold ml-[9%] my-1">
       Latest<NewspaperIcon class="h-[26px] w-[26px] ml-1" />
     </div>
   </div>
@@ -57,51 +16,49 @@
       class="md:hidden sm:hidden custom-sm:hidden xl:block lg:block lg:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
     >
       <Accordion
-        title="Property Type"
+        title="Company Names"
         :content="[
-          { type: 'radio', data: 'Buy' },
-          { type: 'radio', data: 'Rent' },
+          { type: 'checkbox', data: 'Accenture' },
+          { type: 'checkbox', data: 'Azure' },
+          { type: 'checkbox', data: 'Talleco' },
         ]"
       />
       <Accordion
-        title="Property Category"
+        title="Salary Range"
         :content="[
-          { type: 'checkbox', data: 'Commercial' },
-          { type: 'checkbox', data: 'Condo' },
-          { type: 'checkbox', data: 'House' },
-          { type: 'checkbox', data: 'Land' },
-          { type: 'checkbox', data: 'Townhouse' },
+          { type: 'text', data: '₱ _ _ _ _ _ _ _ _ _ _ _ _ ' },
+          { type: 'range', data: 'Cebu City' },
+        ]"
+      />
+      <Accordion
+        title="Job Role"
+        :content="[
+          { type: 'checkbox', data: 'Web Developer' },
+          { type: 'checkbox', data: 'Full Stack Developer' },
+          { type: 'checkbox', data: 'Mobile Developer' },
         ]"
       />
       <Accordion
         title="Location"
+        :content="[{ type: 'dialog', data: 'Cebu' }]"
+      />
+
+      <Accordion
+        title="Ratings"
         :content="[
-          { type: 'text', data: 'City' },
-          { type: 'text', data: 'Address' },
-          { type: 'dialog', data: 'Philippines' },
-          { type: 'dialog', data: 'Cebu' },
+          { type: 'radio', data: '5 Stars' },
+          { type: 'radio', data: '4 Stars' },
+          { type: 'radio', data: '3 Stars' },
+          { type: 'radio', data: '2 Stars' },
+          { type: 'radio', data: '1 Stars' },
         ]"
       />
       <Accordion
-        title="Price"
+        title="Job Type"
         :content="[
-          { type: 'text', data: '₱ _ _ _ _ _ _ _ _ _ _ _ _ ' },
-          { type: 'range', data: 'Cebu' },
-        ]"
-      />
-      <Accordion
-        title="Area"
-        class=""
-        :content="[
-          { type: 'text', data: 'Square Meter ' },
-          { type: 'range', data: 'Cebu' },
-        ]"
-      />
-      <Accordion
-        title="Rooms"
-        :content="[
-          { type: 'spinner', data: 'Bedroom' },
-          { type: 'spinner', data: 'Bathroom' },
+          { type: 'radio', data: 'On Site' },
+          { type: 'radio', data: 'Work At Home' },
+          { type: 'radio', data: 'Hybrid' },
         ]"
       />
       <button
@@ -126,72 +83,24 @@
     <div
       class="flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] custom-sm:gap-3 custom-sm:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-evenly"
     >
-      <Products
-        class=""
-        v-for="(property, index) in properties"
-        :property_id="property.property_id"
-        :key="index"
-        :image="property.imageUrl || ''"
-        :name="property.property_name"
-        :price="property.property_price"
-        :category="property.property_category"
-        :size="property.property_area"
-        :type="property.property_type"
-        :bedroom="property.property_bedroom"
-        :bathroom="property.property_bathroom"
-        :address="property.property_local_area"
-        :city="property.property_city"
-        :airport="property.property_airport"
-        :busstand="property.property_busstand"
-        :hospital="property.property_hospital"
-        :patroltank="property.property_patroltank"
-        :railway="property.property_railway"
-        :shopping="property.property_shopping"
-        :universities="property.property_universities"
-        :image_data="property.image_data"
-      />
-    </div>
-  </div>
-  <!--Agents Carousel-->
-  <div class="p-8 relative">
-    <h1
-      class="mt-10 mb-2 font-black custom-sm:text-xl sm:text-2xl md:text-3.5xl lg:text-4xl flex justify-center items-center"
-    >
-      <span class="mx-2"> MEET OUR </span>
-      <span class="text-[#E67E23]"> AGENTS !</span>
-    </h1>
-    <!-- <Agents /> -->
-    <swiper-container
-      effect="coverflow"
-      grab-cursor="true"
-      centered-slides="true"
-      slides-per-view="auto"
-      coverflow-effect-rotate="50"
-      coverflow-effect-stretch="0"
-      coverflow-effect-depth="100"
-      coverflow-effect-modifier="1"
-      coverflow-effect-slide-shadows="false"
-      :autoplay="true"
-      disableOnInteraction="false"
-      class="w-full flex lg:p-[50px] md:p-[50px] custom-sm:p-[0px]"
-    >
-      <swiper-slide
-        v-for="(agent, index) in agents"
-        :key="index"
-        class="bg-center bg-cover w-[370px] h-[500px]"
+      <Products />
+      <Products />
+      <Products />
+
+      <div
+        class="flex justify-center items-center custom-sm:my-5 custom-sm:w-[20%]"
       >
-        <div class="block w-full">
-          <AgentCard
-            :image="agent.image"
-            :id="agent.id"
-            :name="agent.name"
-            :position="agent.position"
-            :description="agent.description"
-            :hoverable="false"
-          />
-        </div>
-      </swiper-slide>
-    </swiper-container>
+        <Pagination
+          :postCount="postCount"
+          :currentPage="currentPage"
+          :totalPage="totalPage"
+          :pages="pages"
+          :next="next"
+          :previous="previous"
+          :changePage="changePage"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -200,7 +109,7 @@ import { register } from "swiper/element/bundle";
 import Accordion from "../components/Accordion.vue";
 import Products from "../components/Products.vue";
 import Loading from "../components/Loading.vue";
-
+import Pagination from "../components/Pagination.vue";
 import { NewspaperIcon } from "@heroicons/vue/24/outline";
 import AgentCard from "../components/AgentCard.vue";
 import { ref, onMounted } from "vue";

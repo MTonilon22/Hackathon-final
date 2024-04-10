@@ -103,10 +103,10 @@
           />
         </div>
         <br />
-        <div class="flex flex-wrap justify-evenly gap-y-9 md:gap-y-5 lg:gap-x-9">
-          <Loading
-          v-if="properties.length === 0"
-          />
+        <div
+          class="flex flex-wrap justify-evenly gap-y-9 md:gap-y-5 lg:gap-x-9"
+        >
+          <Loading v-if="properties.length === 0" />
           <Products
             v-for="(property, index) in properties"
             :key="index"
@@ -163,19 +163,14 @@ onMounted(() => {
 
 const properties = ref([]);
 
-
-
-
-const getProperties = async (index,loopCount) =>{
-
-  properties.value= [];
-  
+const getProperties = async (index, loopCount) => {
+  properties.value = [];
 
   const response = await fetch("http://localhost:8080/getAllPropertyID");
   const data = await response.json();
   for (var i = index; i < index + loopCount; i++) {
     try {
-      const response = await fetch ('http://localhost:8080/getAllPropertyID');
+      const response = await fetch("http://localhost:8080/getAllPropertyID");
       const data = await response.json();
 
       var id = data[i].property_id;
