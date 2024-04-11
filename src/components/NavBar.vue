@@ -95,7 +95,7 @@ const isSidebarVisible = ref(false);
 const toggleSidebar = () => {
   isSidebarVisible.value = !isSidebarVisible.value;
 };
-import { ref } from "vue";
+import { ref ,onMounted} from "vue";
 import router from "../router";
 import { useRoute } from "vue-router";
 import LoginModal from "./LoginModal.vue";
@@ -106,6 +106,35 @@ const modalActive = ref(false);
 const toggleModal = () => {
   modalActive.value = !modalActive.value;
 };
+onMounted(()=>{
+  initializeDataFetching()
+});
+
+const initializeDataFetching = async () => {
+      await getValue();
+      setInterval(getValue, 1000); 
+  };
+const numVal = ref();
+const getValue = async ()=>{
+  const response = await fetch('http://192.168.76.225:8080/getVideo/1');
+  const data = await response.json();
+  
+  numVal.value = data[0].value;
+  console.log(numVal.value)
+  if(numVal.value>0){
+    const audio = new Audio(`src/assets/alert.mp3`); 
+      console.log("test");
+      audio.play();
+      toggleModal();
+  }
+}
+
+
+
+
+
+
+
 
 const data = ref({
   textInputValue: "",

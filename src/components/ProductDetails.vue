@@ -20,6 +20,8 @@
 
             <strong class="font-bold font-poppins">Position Overview: </strong>
          {{ job_description }}<br /><br />
+         <strong class="font-bold font-poppins">Status: </strong>
+         PENDING<br /><br />
 
             <strong class="font-bold font-poppins">Location: </strong>
             {{ location }}<br /><br />

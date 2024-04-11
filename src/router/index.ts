@@ -65,6 +65,12 @@ const routes: RouteRecordRaw[] = [
     component: () => import("../MainPages/AgentNew.vue"),
     meta: { hideNavAndFooter: true },
   },
+  {
+    path: "/Mobile",
+    name: "ViewAgent",
+    component: () => import("../MainPages/Mobile.vue"),
+    meta: { hideNavAndFooter: true },
+  },
   // {
   //   path: "/AgentNewEditAgent",
   //   name: "EditAgent",
