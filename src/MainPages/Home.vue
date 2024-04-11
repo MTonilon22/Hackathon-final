@@ -83,9 +83,18 @@
     <div
       class="flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] custom-sm:gap-3 custom-sm:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-evenly"
     >
-      <Products />
-      <Products />
-      <Products />
+      <Products
+      v-for="(job,index) in jobs"
+      :id="job.id"
+      :image="job.image"
+      :jobtitle="job.job_title"
+      :jobcompany="job.employer_id"
+      :jobtype="job.job_type"
+      :salary="job.salary"
+      :jobdescription="job.job_description"
+
+       />
+
 
       <div
         class="flex justify-center items-center custom-sm:my-5 custom-sm:w-[20%]"
@@ -118,154 +127,44 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 onMounted(() => {
-  register();
-  get6Properties();
-  getAgents();
+  getJobs();
+
 });
 
-const properties = ref([]);
+const jobs = ref([]);
 
-// START OF PROPERTIES FETCH
-const get6Properties = async () => {
-  const response = await fetch("http://localhost:8080/getAllPropertyID");
+const getJobs = async () => {
+  const response = await fetch('http://localhost:8080/getJobs');
   const data = await response.json();
+console.log(data[0]);
+  for(var i = 0 ; i < data.length ;i ++){
+    jobs.value.push({
+      id: data[i].job_id,
+      job_title: data[i].job_title,
+      job_company : data[i].employer_id,
+      job_description : data[i].job_description,
+      job_type : data[i].job_type,
+      salary : data[i].salary,
 
-  for (var i = 0; i < data.length; i++) {
-    try {
-      var id = data[i].property_id;
-      const propertyGenData = await general_data(id);
-      const propertyData = await property_data(id);
-      const propertyAddress = await property_address(id);
-      const propertyLandmark = await property_landmark(id);
-      const propertyImage = await property_image(id);
-      const imageData = propertyImage[0].main_image.data;
-
-      properties.value.push({
-        property_id: id,
-        property_name: propertyGenData[0].name,
-        imageUrl: await convertBlob(imageData),
-
-        property_price: propertyData[0].property_price,
-        property_category: propertyData[0].category,
-        property_type: propertyData[0].property_type,
-        property_area: propertyAddress[0].property_area,
-        property_bedroom: propertyAddress[0].bedroom,
-        property_bathroom: propertyAddress[0].bathroom,
-        property_local_area: propertyAddress[0].local_area,
-        property_city: propertyAddress[0].city,
-
-        property_price: propertyData[0].property_price,
-        property_category: propertyData[0].category,
-        property_type: propertyData[0].property_type.toUpperCase(),
-        property_area: propertyAddress[0].property_area,
-        property_bedroom: propertyAddress[0].bedroom,
-        property_bathroom: propertyAddress[0].bathroom,
-        property_local_area: propertyAddress[0].local_area,
-        property_city: propertyAddress[0].city,
-
-        property_airport: propertyLandmark[0].airport ? 1 : 0,
-        property_busstand: propertyLandmark[0].bus_stand ? 1 : 0,
-        property_hospital: propertyLandmark[0].hospital ? 1 : 0,
-        property_patroltank: propertyLandmark[0].patroltank ? 1 : 0,
-        property_railway: propertyLandmark[0].railway ? 1 : 0,
-        property_shopping: propertyLandmark[0].shopping ? 1 : 0,
-        property_universities: propertyLandmark[0].universities ? 1 : 0,
-      });
-
-      if (i + 1 == 6) {
-        break;
-      }
-    } catch (error) {
-      console.error("Error processing property:", error);
-    }
-  }
-};
-
-const general_data = async (i) => {
-  try {
-    const response = await fetch(`http://localhost:8080/getGeneralData/${i}`);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error: ", error);
-  }
-};
-const property_image = async (i) => {
-  try {
-    const response = await fetch(`http://localhost:8080/getPropertyImage/${i}`);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error: ", error);
-  }
-};
-const property_data = async (i) => {
-  try {
-    const response = await fetch(`http://localhost:8080/getPropertyData/${i}`);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error: ", error);
-  }
-};
-const property_address = async (i) => {
-  try {
-    const response = await fetch(
-      `http://localhost:8080/getPropertyAddress/${i}`
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error: ", error);
-  }
-};
-
-const property_landmark = async (i) => {
-  try {
-    const response = await fetch(
-      `http://localhost:8080/getPropertyLandMark/${i}`
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Error: ", error);
-  }
-};
-//START OF AGENT FETCH
-const agents = ref([]); //array of agents
-const getAgents = async () => {
-  const response = await fetch("http://localhost:8080/getAgents");
-  const data = await response.json();
-
-  for (var i = 0; i < data.length; i++) {
-    var image = await getAgentImageByID(data[i].agent_id);
-    agents.value.push({
-      id: data[i].agent_id,
-      image: await convertBlob(image),
-      name: data[i].agent_name,
-      position: data[i].position,
-      description: data[i].description,
+      image: await convertBlob(data[i].image.data),
     });
   }
-};
-const getAgentImageByID = async (id) => {
-  const response = await fetch(`http://localhost:8080/getAgentByID/${id}`);
-  const data = await response.json();
 
-  return data[0].profile_picture.data;
-};
+}
+
 
 const convertBlob = (image) => {
-  return new Promise((resolve, reject) => {
-    if (image) {
-      const blob = new Blob([new Uint8Array(image)], { type: "image/jpeg" });
-      const reader = new FileReader();
-      reader.readAsDataURL(blob);
-      reader.onloadend = () => {
-        const dataURL = reader.result;
-        resolve(dataURL);
-      };
-    }
-  });
-};
+      return new Promise((resolve, reject) => {
+        if (image) {
+          const blob = new Blob([new Uint8Array(image)], { type: "image/jpeg" });
+          const reader = new FileReader();
+          reader.readAsDataURL(blob);
+          reader.onloadend = () => {
+            const dataURL = reader.result;
+            resolve(dataURL);
+          };
+        }
+      });
+    };
+
 </script>

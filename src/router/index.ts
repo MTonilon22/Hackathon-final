@@ -147,6 +147,17 @@ const routes: RouteRecordRaw[] = [
     name: "agentProfile",
     component: () => import("../MainPages/AgentProfile.vue"),
   },
+  
+  {
+    path: "/Login",
+    name: "Login",
+    component: () => import("../MainPages/Login.vue"),
+  },
+  {
+    path: "/AddJob",
+    name: "AddJob",
+    component: () => import("../MainPages/AddJob.vue"),
+  },
 ];
 
 const router = createRouter({
