@@ -12,7 +12,7 @@
           <ChevronDownIcon v-else class="h-[15px] w-[15px] text-[#2a2d57]" />
         </div>
         <div
-          class="flex items-center font-poppins font-bold custom-sm:text-white sm:text-white md:text-white lg:text-orange-500 w-[88%]"
+          class="flex items-center font-poppins font-bold custom-sm:text-white sm:text-white md:text-white lg:text-[#2a2d57] w-[88%]"
         >
           <!-- Title of the accordion -->
           {{ title }}
