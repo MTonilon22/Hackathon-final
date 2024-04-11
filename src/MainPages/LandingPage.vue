@@ -56,5 +56,5 @@
   
   <script setup>
   import graphic from "../assets/register.png";
-  s
+  
   </script>
