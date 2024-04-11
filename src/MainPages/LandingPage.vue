@@ -56,5 +56,5 @@
   
   <script setup>
   import graphic from "../assets/register.png";
-  import Footer from "../components/Footer.vue";
+  s
   </script>

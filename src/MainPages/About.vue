@@ -1,57 +1,37 @@
 <template>
   <div class="h-screen flex flex-row w-[100%]">
-    <div class="w-[30%]">adad</div>
-    <div class="w-[70]">dadad</div>
+    <div class="w-[40%] ml-[1%] ">
+      <div class="text-lg font-bold tracking-wider my-5 ml-[2%]   ">
+        Related Hot Topics
+      </div>
+      <div class="gap-5 border-2 rounded-lg "><HotTopics/>
+      <HotTopics/>
+      <HotTopics/>
+      <HotTopics/>
+      <HotTopics/></div>
+      
+    </div>
+      
+    <div class="w-[70%] mr-[1%]">
+      <div class="text-lg font-bold tracking-wider my-5 ml-[2%]">
+        Community Forum
+      </div>
+      <div class="border-2 ml-[3%] h-full rounded-lg space-y-4 ">
+        <div class="w-[95%] h-[25%]  items-center justify-center flex mx-auto mt-[2%]"><ForumCards/></div>
+      
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import about from "../assets/about.png";
-import ValCard from "../components/ValCard.vue";
-import AgentCard from "../components/AgentCard.vue";
-import Gallery from "../components/Gallery.vue";
+import HotTopics from "../components/HotTopics.vue"
+import ForumCards from "../components/ForumCards.vue"
+
 import { ref, onMounted } from "vue";
 
-onMounted(() => {
-  getAgents();
-});
+
 
 //START OF AGENT FETCH
-const agents = ref([]); //array of agents
-const getAgents = async () => {
-  const response = await fetch("http://localhost:8080/getAgents");
-  const data = await response.json();
 
-  for (var i = 0; i < data.length; i++) {
-    var image = await getAgentImageByID(data[i].agent_id);
-
-    agents.value.push({
-      id: data[i].agent_id,
-      image: await convertBlob(image),
-      name: data[i].agent_name,
-      position: data[i].position,
-      description: data[i].description,
-    });
-  }
-};
-const getAgentImageByID = async (id) => {
-  const response = await fetch(`http://localhost:8080/getAgentByID/${id}`);
-  const data = await response.json();
-
-  return data[0].profile_picture.data;
-};
-
-const convertBlob = (image) => {
-  return new Promise((resolve, reject) => {
-    if (image) {
-      const blob = new Blob([new Uint8Array(image)], { type: "image/jpeg" });
-      const reader = new FileReader();
-      reader.readAsDataURL(blob);
-      reader.onloadend = () => {
-        const dataURL = reader.result;
-        resolve(dataURL);
-      };
-    }
-  });
-};
 </script>

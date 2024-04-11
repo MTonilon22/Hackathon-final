@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:ml-[-11%] cs:mx-auto sm:mx-auto cs:w-[100%] sm:h-[335px] border-2 lg:p-5 shadow-xl md:w-[100%] lg:w-[100%] md:h-[380px] lg:h-[440px] rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70)"
+    class="lg:ml-[2%] cs:mx-auto sm:mx-auto cs:w-[100%] sm:h-[335px] border-2 lg:p-5 shadow-xl md:w-[100%] lg:w-[100%] md:h-[380px] lg:h-full rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70)"
   >
     <div
       class="my-[5%] cs:w-[40%] cs:h-[40%] cs:mx-auto relative lg:w-48 md:w-40 mx-auto -z-30"
@@ -14,12 +14,15 @@
         class="absolute inset-0 border-4 border-purple-700 rounded-full z-0"
       ></div>
     </div>
-    <div class="lg:mt-7 md:mt-3 text-center text-[#454544]">
-      <div class="text-center font-bold font-poppins lg:text-2xl md:text-lg">
-        {{ name }}
+    <div class="lg:mt-7 md:mt-3 text-center text-[#454544] space-y-2">
+      <div class="text-center font-bold font-poppins lg:text-2xl md:text-lg ">
+        {{ name }} Michael Tonilon
       </div>
       <div class="font-medium font-poppins">
-        {{ property_number }} properties
+        {{ jobtype }} Full Stack Developer
+      </div>
+      <div class="font-medium font-poppins w-[80%] mx-auto ">
+        {{ jobdescription }} I am full stack developer with 5 years of experience
       </div>
       <div class="flex justify-center items-center mt-5 text-white">
         <button
@@ -29,8 +32,8 @@
           Contact
         </button>
       </div>
-      <div class="my-5 mx-auto">
-        <div class="flex justify-center items-center">
+      <div class="my-5 mx-auto ">
+        <div class="flex justify-center items-center gap-5 my-5">
           <a :href="facebook">
             <mdicon
               name="facebook"
@@ -63,17 +66,19 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+import profile_picture from "../assets/marivil.png"
 const router = useRouter();
 
 const props = defineProps({
   id: String,
-  profile_picture: String,
+  
   name: String,
-  property_number: String,
+  jobtype: String,
   facebook: String,
   twitter: String,
   instagram: String,
 });
+
 
 const redirect = () => {
   router.push(`/agentProfile/${props.id}`);
