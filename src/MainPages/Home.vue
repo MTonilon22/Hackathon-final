@@ -1,12 +1,12 @@
 <template>
-  <div class="flex text-[#2a2d57] mb-2 mt-4">
+  <div class="flex text-[#E67E23] mb-2 mt-4">
     <div
       class="flex w-[16%] text-lg pl-3 ml-3 font-poppins font-bold cs:hidden sm:hidden md:hidden lg:block items-center justify-center my-auto"
     >
       Search Filter
     </div>
     <div class="flex w-[84%] text-lg pl-5 font-poppins font-bold ml-[9%] my-1">
-      Job Listing<NewspaperIcon class="h-[26px] w-[26px] ml-1" />
+      Latest<NewspaperIcon class="h-[26px] w-[26px] ml-1" />
     </div>
   </div>
   <div class="flex">
@@ -64,7 +64,7 @@
       <button
         @click="filter"
         style="
-          background-color: #2a2d57;
+          background-color: #e67e23;
           color: white;
           padding: 10px 15px;
           border: none;
@@ -92,7 +92,7 @@
       :jobtype="job.job_type"
       :salary="job.salary"
       :jobdescription="job.job_description"
-
+      @click="apply(job.id)"
        />
 
 
@@ -134,9 +134,8 @@ onMounted(() => {
 const jobs = ref([]);
 
 const getJobs = async () => {
-  const response = await fetch('http://localhost:8080/getJobs');
+  const response = await fetch('http://192.168.137.1:8080/getJobs');
   const data = await response.json();
-console.log(data[0]);
   for(var i = 0 ; i < data.length ;i ++){
     jobs.value.push({
       id: data[i].job_id,
@@ -151,6 +150,14 @@ console.log(data[0]);
   }
 
 }
+
+const apply =  (id) =>{
+  console.log(id)
+
+  router.push(`details/${id}`);
+}
+
+
 
 
 const convertBlob = (image) => {
