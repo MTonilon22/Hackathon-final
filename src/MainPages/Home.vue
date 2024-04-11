@@ -92,6 +92,7 @@
       :jobtype="job.job_type"
       :salary="job.salary"
       :jobdescription="job.job_description"
+      :skillLevel="job.experience"
       @click="apply(job.id)"
        />
 
@@ -131,12 +132,37 @@ onMounted(() => {
 
 });
 
+const filter = async () =>{
+  jobs.value = ([]);
+
+  const response = await fetch('http://localhost:8080/getJobs');
+  const data = await response.json();
+  for(var i = 0 ; i < data.length ;i ++){
+    if(data[i].job_type=='wah'){
+      jobs.value.push({
+      id: data[i].job_id,
+      job_title: data[i].job_title,
+      job_company : data[i].employer_id,
+      job_description : data[i].job_description,
+      job_type : data[i].job_type,
+      salary : data[i].salary,
+      experience : data[i].experience,
+
+        
+      image: await convertBlob(data[i].image.data),
+    });
+    }
+
+  }
+}
+
 const jobs = ref([]);
 
 const getJobs = async () => {
-  const response = await fetch('http://192.168.137.1:8080/getJobs');
+  const response = await fetch('http://localhost:8080/getJobs');
   const data = await response.json();
   for(var i = 0 ; i < data.length ;i ++){
+    console.log(data[i])
     jobs.value.push({
       id: data[i].job_id,
       job_title: data[i].job_title,
@@ -144,6 +170,7 @@ const getJobs = async () => {
       job_description : data[i].job_description,
       job_type : data[i].job_type,
       salary : data[i].salary,
+      experience : data[i].experience,
 
       image: await convertBlob(data[i].image.data),
     });

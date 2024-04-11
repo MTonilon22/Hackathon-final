@@ -23,9 +23,9 @@
       >
         <div class="h-[700px] flex-col overflow-auto">
           <BlogOwner
-            :profile_picture="agent_profile"
-            :name="agent_name"
-            :property_number="agent_numberOfProperty"
+            profile_picture="https://jobquest.ph/uploads/company_logos/20221103-jobquestph_-_with_MYMIMA__vertical_300res.png"
+            name="JobQuestPH"
+            property_number="29 jobs posted"
           />
         </div>
       </div>

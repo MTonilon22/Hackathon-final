@@ -36,7 +36,7 @@
                   Submit Requirement
                 </li>
                 <li @click="currenTab = 1" class="step">Primary Interview</li>
-                <li @click="currenTab = 2" class="step">Online Assesments</li>
+                <li @click="currenTab = 2" class="step">Online Assessments</li>
                 <li @click="currenTab = 3" class="step">
                   Technical Interviews
                 </li>
@@ -49,6 +49,15 @@
               class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
             >
               {{ step1 }}
+              <label for="textInput" class="block mb-2 text-sm font-medium text-gray-700">Enter Answer:</label>
+              <input
+                type="text"
+                id="textInput"
+                name="textInput"
+                placeholder="Type here..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500"
+              />
+              <button @click="currenTab = 1">Done</button>
             </div>
 
             <div
@@ -56,6 +65,16 @@
               class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
             >
               {{ step2 }}
+              <label for="textInput" class="block mb-2 text-sm font-medium text-gray-700">Enter Answer:</label>
+              <input
+                type="text"
+                id="textInput"
+                name="textInput"
+                placeholder="Type here..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500"
+              />
+              <button @click="currenTab = 2">Done</button>
+
             </div>
 
             <div
@@ -63,6 +82,16 @@
               class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
             >
               {{step3}}
+              <label for="textInput" class="block mb-2 text-sm font-medium text-gray-700">Enter Answer:</label>
+              <input
+                type="text"
+                id="textInput"
+                name="textInput"
+                placeholder="Type here..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500"
+              />
+              <button @click="currenTab = 3">Done</button>
+
             </div>
 
             <div
@@ -70,6 +99,15 @@
               class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
             >
               {{ step4 }}
+              <label for="textInput" class="block mb-2 text-sm font-medium text-gray-700">Enter Answer:</label>
+              <input
+                type="text"
+                id="textInput"
+                name="textInput"
+                placeholder="Type here..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500"
+              />
+              <button @click="currenTab = 4">Done</button>
             </div>
 
             <div
@@ -77,6 +115,16 @@
               class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
             >
               {{ step5 }}
+               <label for="textInput" class="block mb-2 text-sm font-medium text-gray-700">Enter Email:</label>
+              <input
+              v-model="email"
+                type="text"
+                id="textInput"
+                name="textInput"
+                placeholder="Type here..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500"
+              />
+              <button @click="sendMail">Done</button>
             </div>
             <div
               class="flex lg:w-full text-[#2a2d57] lg:ml-3 lg:mb-2 md:ml-1 md:mb-1"
@@ -133,6 +181,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import axios from "axios";
 import Comment from "../components/Comment.vue";
 
 const currenTab = ref(0);
@@ -152,6 +201,34 @@ step4:String,
 step5:String,
 
 });
+
+
+const email = ref("");
+  const subject = ref("Talleco Application Status");
+  const message = ref("Dear Stephen Sagarino Jr., thank you for your interest in joining Talleco. After careful consideration, we regret to inform you that we have decided to pursue other candidates whose qualifications more closely align with our current needs. We appreciate the time you invested in applying and wish you the best of luck in your future endeavors.");
+  const improve = ref("Based on your answers, in Step 1, you seem to be lacking in a specific skill. We recommend focusing on improving in this area to enhance your qualifications for future opportunities.");
+  const sendMail = async () => {
+    try {
+      const formData = new FormData();
+      formData.append("email", email.value);
+      formData.append("subject", subject.value);
+      formData.append("message", message.value);
+      formData.append("improve", improve.value);
+
+      await axios.post("http://localhost:8080/sendMail", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+  
+    
+  
+      alert("Email sent successfully!");
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to send email. Please try again.");
+    }
+  };
 </script>
 
 <style>

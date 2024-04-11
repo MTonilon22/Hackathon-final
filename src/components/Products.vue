@@ -1,41 +1,37 @@
 <template>
-  <div class="card card-side bg-base-100 rounded-md shadow-xl w-[80%] border-2">
-    <figure class="w-[70%] h-[100%] p-5">
-      <img class="w-[100%] h-[100%] rounded-md" :src="image" alt="Movie" />
-    </figure>
-    <div class="ml-[2%] mt-[3%]">
-      <h2 class="card-title">{{ jobtitle }}</h2>
-      <div class="flex flex-row w-[100%] my-[2%]">
-        <p class="w-[20%] text-center font-semibold">
-          {{ jobcompany }}
-        </p>
-        <p class="w-[20%] text-center font-semibold">
-        <div v-if="jobtype=='wah'">
-          Work At Home
-        </div>
-        <div v-if="jobtype=='hybrid'">
-          Hybrid
-        </div>
-        <div v-if="jobtype=='onsite'">
-          Onsite
-        </div>
-        </p>
-        <p class="w-[5%] text-center font-semibold"> P{{ salary }}</p>
+  <div class="bg-white rounded-md shadow-xl border-2 p-4 w-[80%] mx-auto">
+    <div class="md:flex">
+      <div class="md:w-[30%] md:h-auto">
+        <img class="w-full h-auto rounded-md object-cover" :src="image" alt="Job Image" />
       </div>
-      <p class="w-[90%] text-sm">
-        {{ jobdescription }}
-      </p>
-      <button class="bg-orange-500 rounded-md text-white px-8 py-1 mt-[3%]">
-        Apply
-      </button>
+      <div class="md:w-[70%] md:ml-4 mt-4 md:mt-0">
+        <div class="flex items-center mb-2">
+          <div v-if="skillLevel === 'herald'" class="w-4 h-4 rounded-full bg-green-500 mr-2"></div>
+          <div v-else-if="skillLevel === 'legend'" class="w-4 h-4 rounded-full bg-yellow-500 mr-2"></div>
+          <div v-else class="w-4 h-4 rounded-full bg-red-500 mr-2"></div>
+          <h3 class="text-lg font-bold">{{ skillLevel }}</h3>
+        </div>
+        <h2 class="text-xl font-bold mb-2">{{ jobtitle }}</h2>
+        <p class="text-gray-600 mb-2">{{ jobcompany }}</p>
+        <p class="text-green-500 mb-2" v-if="jobtype === 'wah'">Work At Home</p>
+        <p class="text-blue-500 mb-2" v-else-if="jobtype === 'hybrid'">Hybrid</p>
+        <p class="text-purple-500 mb-2" v-else>Onsite</p>
+        <p class="text-gray-800 font-bold text-lg mb-2">₱{{ salary }}</p>
+        <p class="text-gray-700 mb-4">{{ jobdescription }}</p>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-md">
+          Apply Now
+        </button>
+      </div>
     </div>
   </div>
 </template>
+
 <script setup>
 import softeng from "../assets/soft-eng.png";
 
 defineProps({
   image: String,
+  skillLevel: String,
   jobtitle: String,
   jobcompany: String,
   jobtype: String,

@@ -2,56 +2,58 @@
   <div class="p-3">
     <div class="flex text-[#2a2d57] mb-2 md:">
       <div
-        class="flex w-[16%] text-lg pl-3 font-poppins font-bold md:text-md lg:text-lg cs:hidden sm:hidden md:hidden lg:block"
+        class="flex w-[16%] text-lg pl-3 font-poppins font-bold md:text-md lg:text-lg custom-sm:hidden sm:hidden md:hidden lg:block"
       >
         Search Filter
       </div>
       <div
-        class="flex w-[56%] cs:ml-[2%] text-lg lg:ml-[2%] lg:pl-5 font-poppins font-bold"
+        class="flex w-[56%] custom-sm:ml-[2%] text-lg lg:ml-[2%] lg:pl-5 font-poppins font-bold"
       >
         Blog <NewspaperIcon class="h-[26px] w-[26px] ml-1" />
       </div>
       <div
-        class="cs:hidden flex w-[30%] text-lg font-poppins font-bold md:ml-9 lg:ml-[10%]"
+        class="custom-sm:hidden flex w-[30%] text-lg font-poppins font-bold md:ml-9 lg:ml-[10%]"
       >
         All <mdicon class="ml-2" name="post-outline" :width="26" :height="26" />
       </div>
     </div>
-    <div class="flex cs:flex cs:flex-col">
+    <div class="flex custom-sm:flex custom-sm:flex-col">
       <div
-        class="md:hidden sm:hidden cs:hidden xl:block lg:block lg:h-[700px] cs:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
+        class="md:hidden sm:hidden custom-sm:hidden xl:block lg:block lg:h-[700px] custom-sm:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
       >
         <div class="h-[700px] flex-col overflow-auto">
           <BlogOwner
-            :profile_picture="agent_profile"
-            :name="agent_name"
-            :property_number="agent_numberOfProperty"
+            profile_picture="https://jobquest.ph/uploads/company_logos/20221103-jobquestph_-_with_MYMIMA__vertical_300res.png"
+            name="JobQuestPH"
+            property_number="29 jobs posted"
           />
         </div>
       </div>
 
       <BlogDetails
-        :iframe="iframe"
-        :developer="developer"
-        :title="title"
-        :description="description"
+        :image="image"
+        :job_title="job_title"
+
+        :job_description="job_description"
         :location="location"
-        :details="details"
-        :broker="broker"
-        :contact_phone="contact_phone"
-        :contact_telephone="contact_telephone"
-        :email_address="email"
-        :key_tags="key_tags"
-        :amenities="amenities"
-        :landmarks="landmarks"
-        :highlights="highlights"
+        :salary="salary"
+        :skills="skills"
+
+        :step1="step1"
+        :step2="step2"
+        :step3="step3"
+        :step4="step4"
+        :step5="step5"
+
+
+  
       />
 
       <div
-        class="lg:w-[25%] md:w-[100%] lg:mr-6 cs:flex cs:flex-col"
+        class="lg:w-[25%] md:w-[100%] lg:mr-6 custom-sm:flex custom-sm:flex-col"
       >
         <div
-          class="cs:block md:hidden lg:hidden flex w-[30%] text-lg flex-row font-poppins font-bold md:ml-9 lg:ml-[10%] text-orange-500"
+          class="custom-sm:block md:hidden lg:hidden flex w-[30%] text-lg flex-row font-poppins font-bold md:ml-9 lg:ml-[10%] text-orange-500"
         >
           <span class="flex-row w-[200px] flex my-3 ml-2"
             ><h3 class="flex">
@@ -67,14 +69,15 @@
         </div>
 
         <div
-          class="cs:flex cs:flex-col cs:h-[300px] cs:w-[95%] cs:mx-auto lg:w-full lg:h-[480px] overflow-auto bg-white border-2 cs:hover:border-orange-500 rounded-md shadow-xl lg:p-5 md:p-2 md:ml-2 lg:ml-5 mb-5"
+          class="custom-sm:flex custom-sm:flex-col custom-sm:h-[300px] custom-sm:w-[95%] custom-sm:mx-auto lg:w-full lg:h-[480px] overflow-auto bg-white border-2 custom-sm:hover:border-orange-500 rounded-md shadow-xl lg:p-5 md:p-2 md:ml-2 lg:ml-5 mb-5"
         >
           <Blog
-            v-for="(blog, index) in allBlogs"
-            @click="currentBlog(blog.id)"
-            :thumbnailUrl="blog.thumbnail"
-            :description="blog.name"
-            :name="blog.broker"
+          v-for="(job,index) in jobs"
+          @click="getCurrentJob(job.id)"  
+            :thumbnailUrl="job.image"
+            :name="job.job_title"
+            :description="job.job_description"
+
           />
         </div>
         <div></div>
@@ -95,141 +98,89 @@ import {
   PaperAirplaneIcon,
 } from "@heroicons/vue/24/outline";
 import Blog from "../components/Blog.vue";
-import BlogDetails from "../components/BlogDetails.vue";
+import BlogDetails from "../components/ProductDetails.vue";
 import { ref, onMounted, computed } from "vue";
 
+import { useRoute } from "vue-router";
+const id = ref(2);
+
+
 onMounted(() => {
-  recommendedBlogs();
+  getCurrentJob(2);
+  getJobs();  
 });
 
-const iframe = ref();
-const name = ref();
-const title = ref();
-const developer = ref();
-const details = ref();
-const location = ref();
-const description = ref();
-const broker = ref();
-const contact_phone = ref();
-const contact_telephone = ref();
-const email = ref();
-const key_tags = ref();
-const amenities = ref([]);
-const landmarks = ref([]);
-const highlights = ref([]);
+const route = useRoute();
 
-const currentBlog = async (id) => {
-  const blog = await getBlog(id);
-  iframe.value = blog.iframe;
-  title.value = blog.name;
-  developer.value = blog.developer;
-  location.value = blog.location;
-  details.value = blog.details;
-  description.value = blog.description;
-  broker.value = blog.broker;
-  contact_phone.value = blog.contact_phone;
-  contact_telephone.value = blog.contact_telephone;
-  email.value = blog.email_address;
-  key_tags.value = blog.key_tags;
 
-  amenities.value = await getAmenities(id);
-  landmarks.value = await getLandmarks(id);
-  highlights.value = await getHighlights(id);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+const image = ref(null);
+const job_title = ref(null)
+const job_description=ref()
+const job_location=ref()
+const salary=ref()
 
-const nuller = () => {
-  iframe.value = null;
-  title.value = null;
-  developer.value = null;
-  location.value = null;
-  details.value = null;
-  description.value = null;
-  broker.value = null;
-  contact_phone.value = null;
-  contact_telephone.value = null;
-  email.value = null;
-  key_tags.value = null;
-  amenities.value = null;
-  landmarks.value = null;
-  highlights.value = null;
-};
+const step1=ref()
+const step2=ref()
+const step3=ref()
+const step4=ref()
+const step5=ref()
 
-const allBlogs = ref([]);
 
-const recommendedBlogs = async () => {
-  const blogs = await getBlogs(); // all blogs
-  for (var i = 0; i < blogs.length; i++) {
-    const blogID = blogs[i].blog_id;
-    const blog = await getBlog(blogID);
-    const image = await getBlogImage(blogID);
-    if (i == 0) {
-      currentBlog(blogID);
-    }
-    allBlogs.value.push({
-      id: blogID,
-      thumbnail: await convertBlob(image),
-      name: blog.name,
-      broker: blog.broker,
+const getCurrentJob = async (id)=> {
+  const response = await fetch(`http://localhost:8080/getJobById/${id}`);
+  const data = await response.json();
+
+  image.value = await convertBlob(data[0].image.data);
+  job_title.value = data[0].job_title;
+  job_description.value = data[0].job_description;
+  job_location.value = data[0].location;
+  salary.value = data[0].salary;
+  step1.value = data[0].step1;
+  step2.value = data[0].step2;
+  step3.value = data[0].step3;
+  step4.value = data[0].step4;
+  step5.value = data[0].step5;
+
+}
+
+const jobs = ref([]);
+
+const getJobs = async () => {
+  const response = await fetch('http://localhost:8080/getJobs');
+  const data = await response.json();
+  for(var i = 0 ; i < data.length ;i ++){
+    console.log(data[i])
+    jobs.value.push({
+      id: data[i].job_id,
+      job_title: data[i].job_title,
+      job_company : data[i].employer_id,
+      job_description : data[i].job_description,
+      job_type : data[i].job_type,
+      salary : data[i].salary,
+      experience : data[i].experience,
+
+      image: await convertBlob(data[i].image.data),
     });
   }
-};
 
-const getBlogs = async () => {
-  const response = await fetch("http://localhost:8080/getBlogs");
-  const data = await response.json();
-  return data;
-};
+}
 
-const getBlog = async (id) => {
-  const response = await fetch(`http://localhost:8080/getBlogByID/${id}`);
-  const data = await response.json();
-  return data[0];
-};
 
-const getBlogImage = async (id) => {
-  const response = await fetch(`http://localhost:8080/getBlogImageByID/${id}`);
-  const data = await response.json();
-  return data[0].thumbnail.data;
-};
-
-const getAmenities = async (id) => {
-  const response = await fetch(
-    `http://localhost:8080/getAmenitiesByBlogID/${id}`
-  );
-  const data = await response.json();
-  return data[0];
-};
-
-const getHighlights = async (id) => {
-  const response = await fetch(
-    `http://localhost:8080/getHighlightsByBlogID/${id}`
-  );
-  const data = await response.json();
-  return data[0];
-};
-
-const getLandmarks = async (id) => {
-  const response = await fetch(
-    `http://localhost:8080/getLandmarksByBlogID/${id}`
-  );
-  const data = await response.json();
-  return data[0];
-};
 
 const convertBlob = (image) => {
-  return new Promise((resolve, reject) => {
-    if (image) {
-      const blob = new Blob([new Uint8Array(image)], { type: "image/jpeg" });
-      const reader = new FileReader();
-      reader.readAsDataURL(blob);
-      reader.onloadend = () => {
-        const dataURL = reader.result;
-        resolve(dataURL);
-      };
-    }
-  });
-};
+      return new Promise((resolve, reject) => {
+        if (image) {
+          const blob = new Blob([new Uint8Array(image)], { type: "image/jpeg" });
+          const reader = new FileReader();
+          reader.readAsDataURL(blob);
+          reader.onloadend = () => {
+            const dataURL = reader.result;
+            resolve(dataURL);
+          };
+        }
+      });
+    };
+
 </script>
 
 <style>

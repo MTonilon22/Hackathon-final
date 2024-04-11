@@ -117,7 +117,7 @@
       for(var i = 0 ; i < data.length;i++){
         if(data[i].username==username.value){
           if(data[i].password == password.value){
-            router.push('/');
+            router.push('/home');
           }
           else{
             

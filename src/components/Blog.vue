@@ -8,7 +8,7 @@
           class="md:w-[100%] md:h-[100%] cs:w-[100%] cs:h-[100%] lg:w-[40%] lg:h-[100%] m-[-3px] cs:mt-[1%]"
         >
           <img
-            src="../assets/soft-eng.png"
+            :src="thumbnailUrl"
             alt="YouTube Thumbnail"
             class="rounded-lg md:h-[70px] md:w-[100px] cs:h-[80px] cs:w-[105px] object-cover lg:h-[80px] lg:w-[300px] md:mt-1 mx-auto"
           />
@@ -19,11 +19,11 @@
           >
             <!-- {{ description }} -->
             <div class="font-semibold text-black flex">
-              <div class="w-[30%]">Azues</div>
-              <div class="w-[70%]">Software Developer:</div>
+              <div class="w-[30%]">{{ name }}</div>
+              <div class="w-[70%]"></div>
             </div>
 
-            <div>Seeking passionate Software Developer to join team.</div>
+            <div>{{ description }} </div>
           </div>
         </div>
       </a>
