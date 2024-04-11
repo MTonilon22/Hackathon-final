@@ -59,6 +59,8 @@ const addJob = async () =>{
     formData.append('experience',experience.value);
     formData.append('job_title',job_title.value);
     formData.append('job_description',job_description.value);
+    formData.append('skills',skills.value);
+
     formData.append('step1',step1.value);
     formData.append('step2',step2.value);
     formData.append('step3',step3.value);
