@@ -16,8 +16,7 @@
               Registration
             </h1>
             <p1 class="text-secondary cs:text-sm tracking-wide"
-              >To register, please enter your credentials.</p1
-            >
+              >To register, please enter your credentials.</p1>
             <div class="space-y-5 lg:w-[100%]" action="#">
               <div
                 class="lg:flex-row cs:flex-col items-center justify-center lg:flex gap-5 w-[100%] cs:space-y-5"
