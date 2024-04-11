@@ -1,9 +1,9 @@
 <template>
   <div
     :class="{
-      ' bg-white border-gray-200 rounded-lg border-2 shadow-lg w-[370px] h-[500px] custom-sm:w-[300px] custom-sm:h-[500px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.70)] hover:scale-[1.02]':
+      ' bg-white border-gray-200 rounded-lg border-2 shadow-lg w-[370px] h-[500px] cs:w-[300px] cs:h-[500px] hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.70)] hover:scale-[1.02]':
         hoverable,
-      ' bg-white border-gray-200 rounded-lg border-2 shadow-lg w-[370px] h-[500px] custom-sm:w-[300px] custom-sm:h-[440px]  custom-sm:mt-8 custom-sm:mx-auto':
+      ' bg-white border-gray-200 rounded-lg border-2 shadow-lg w-[370px] h-[500px] cs:w-[300px] cs:h-[440px]  cs:mt-8 cs:mx-auto':
         !hoverable,
     }"
   >

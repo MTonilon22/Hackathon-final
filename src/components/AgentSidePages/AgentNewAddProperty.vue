@@ -1,11 +1,11 @@
 <template>
   <div
-    class="bg-[#e9d8c5] custom-sm:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] h-full"
+    class="bg-[#e9d8c5] cs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] h-full"
   >
-    <div class="w-full lg:hidden md:block custom-sm:block bg-[#e9d8c5]">
+    <div class="w-full lg:hidden md:block cs:block bg-[#e9d8c5]">
       <!-- <button
         @click="toggleSidebar"
-        class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+        class="hover:underline cs:md sm:text-md lg:hidden ml-2"
       >
         <mdicon
           name="ReorderHorizontal"
@@ -23,18 +23,18 @@
     <div class="bg-gray-900 lg:block w-[100%] h-[100%] sticky top-0">
       <div class="flex flex-row row-span-2 bg-[#e9d8c5]">
         <div
-          class="bg-[#e9d8c5] custom-sm:mb-[10%] lg:w-[100%] custom-sm:w-[90%] md:w-[90%] mx-auto"
+          class="bg-[#e9d8c5] cs:mb-[10%] lg:w-[100%] cs:w-[90%] md:w-[90%] mx-auto"
         >
           <div
             class="flex lg:w-[60%] md:w-[80%] mt-10 bg-gray-100 rounded-lg items-center justify-center mx-auto my-auto border-2 border-primary text-primary font-500 drop-shadow-lg"
           >
             <div class="text-center w-full my-auto lg:mx-auto mb-10">
-              <div class="custom-sm:text-md my-5 mx-5 font-bold">
+              <div class="cs:text-md my-5 mx-5 font-bold">
                 Fill out the form below to
                 <span class="text-orange-500"> List Property</span>
               </div>
               <div
-                class="border-b-2 border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold custom-sm:mt-[15%] custom-sm:text-sm"
+                class="border-b-2 border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold cs:mt-[15%] cs:text-sm"
               >
                 General Data
               </div>
@@ -73,11 +73,11 @@
                         v-model="property_description"
                         id="propertydesc"
                         type="textarea"
-                        class="block w-full px-4 py-2 h-[80px] border-0 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm custom-sm:text-sm sm:leading-6 focus:outline-none"
+                        class="block w-full px-4 py-2 h-[80px] border-0 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm cs:text-sm sm:leading-6 focus:outline-none"
                       ></textarea>
                     </div>
                     <div
-                      class="md:my-10 md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start custom-sm:w-[120%] custom-sm:ml-[-10%] mx-auto font-bold custom-sm:my-[10%] custom-sm:text-sm"
+                      class="md:my-10 md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start cs:w-[120%] cs:ml-[-10%] mx-auto font-bold cs:my-[10%] cs:text-sm"
                     >
                       Property Data
                     </div>
@@ -109,7 +109,7 @@
                       <select
                         v-model="property_enable"
                         id="propertystatus"
-                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 custom-sm:text-sm custom-sm:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
+                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 cs:text-sm cs:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
                       >
                         <option
                           class="block mb-2 text-sm font-medium"
@@ -136,7 +136,7 @@
                       <select
                         v-model="property_enable"
                         id="propertyapproved"
-                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 custom-sm:text-sm custom-sm:leading-6 focus:outline-none"
+                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 cs:text-sm cs:leading-6 focus:outline-none"
                       >
                         <option
                           class="block mb-2 text-sm font-medium"
@@ -177,7 +177,7 @@
                       <select
                         v-model="property_type"
                         id="propertytype"
-                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 custom-sm:text-sm custom-sm:leading-6 focus:outline-none"
+                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 cs:text-sm cs:leading-6 focus:outline-none"
                       >
                         <option
                           class="block mb-2 text-sm font-medium"
@@ -220,7 +220,7 @@
                       <select
                         v-model="property_category"
                         id="propertycategory"
-                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 custom-sm:text-sm custom-sm:leading-6 focus:outline-none"
+                        class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 cs:text-sm cs:leading-6 focus:outline-none"
                       >
                         <option
                           class="block mb-2 text-sm font-medium"
@@ -302,7 +302,7 @@
                       </div>
                     </div>
                     <div
-                      class="md:my-10 md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start custom-sm:w-[120%] custom-sm:ml-[-10%] mx-auto font-bold custom-sm:my-[10%] custom-sm:text-sm"
+                      class="md:my-10 md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start cs:w-[120%] cs:ml-[-10%] mx-auto font-bold cs:my-[10%] cs:text-sm"
                     >
                       Address & Location
                     </div>
@@ -485,7 +485,7 @@
                       </div>
                     </section>
                     <div
-                      class="md:text-lg sm:text-sm md:my-10 md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start custom-sm:w-[120%] custom-sm:ml-[-10%] mx-auto font-bold custom-sm:my-[10%] custom-sm:text-sm"
+                      class="md:text-lg sm:text-sm md:my-10 md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start cs:w-[120%] cs:ml-[-10%] mx-auto font-bold cs:my-[10%] cs:text-sm"
                     >
                       Amenities & Nearby Landmarks
                     </div>
@@ -497,7 +497,7 @@
                         <!--Amenities-->
                         <div class="sm:mt-0 w-[100%]">
                           <p
-                            class="my-5 custom-sm:text-sm sm:text-sm lg:text-md md:text-lg leading-6 text-gray-600"
+                            class="my-5 cs:text-sm sm:text-sm lg:text-md md:text-lg leading-6 text-gray-600"
                           >
                             Kindly check below the following amenities and
                             nearby landmarks that are included in the property.

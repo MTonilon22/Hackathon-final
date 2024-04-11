@@ -4,24 +4,24 @@
       class="border-gray-200 bg-primary py-5 items-center justify-center flex mx-auto"
     >
       <div
-        class="flex custom-sm:justify-center custom-sm:items-center p-4 md:mx-auto"
+        class="flex cs:justify-center cs:items-center p-4 md:mx-auto"
       >
         <div
-          class="flex mx-auto items-center justify-center custom-sm:items-center custom-sm:justify-center custom-sm:flex"
+          class="flex mx-auto items-center justify-center cs:items-center cs:justify-center cs:flex"
         >
           <img
             src="src/assets/mgLogo.png"
-            class="lg:h-30 lg:w-50 md:h-20 md:w-35 custom-sm:w-[30%] custom-sm:h-[20%]"
+            class="lg:h-30 lg:w-50 md:h-20 md:w-35 cs:w-[30%] cs:h-[20%]"
             alt="megaland"
           />
           <span
-            class="text-xl font-bold dark:text-white flex custom-sm:text-sm"
+            class="text-xl font-bold dark:text-white flex cs:text-sm"
           ></span>
         </div>
       </div>
     </nav>
     <button
-      class="custom-sm:block sm:block md:block lg:hidden text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
+      class="cs:block sm:block md:block lg:hidden text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
       type="button"
       data-drawer-target="drawer-navigation"
       data-drawer-show="drawer-navigation"
@@ -40,7 +40,7 @@
   <!-- SMALL SCREEN TABBING -->
   <div
     id="drawer-navigation"
-    class="self-start text-orange-500 font-bold font-poppins custom-sm:block sm:block md:block lg:hidden fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-primary"
+    class="self-start text-orange-500 font-bold font-poppins cs:block sm:block md:block lg:hidden fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-primary"
     tabindex="-1"
     aria-labelledby="drawer-navigation-label"
   >
@@ -170,7 +170,7 @@
   <div class="bg-gray-900 lg:block w-[100%] h-[100%] sticky top-0">
     <div class="flex flex-row row-span-2 bg-[#e9d8c5]">
       <aside
-        class="bg-gray-900 w-[20%] border-dashed border-orange-500 border-2 h-screen self-start sticky top-0 z-10 custom-sm:hidden sm:hidden md:hidden lg:block text-orange-500 font-bold font-poppins"
+        class="bg-gray-900 w-[20%] border-dashed border-orange-500 border-2 h-screen self-start sticky top-0 z-10 cs:hidden sm:hidden md:hidden lg:block text-orange-500 font-bold font-poppins"
       >
         <div
           class="flex flex-col gap-10 justify-end hover: cursor-pointer mt-[25%] ml-4"

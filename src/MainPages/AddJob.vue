@@ -5,7 +5,7 @@
         class="items-center justify-center mx-auto flex text-secondary font-semibold tracking-widest"
       ></div>
       <div
-        class="lg:w-[100%] flex-col mx-auto cs:w-[100%] items-center justify-center flex lg:mt-[6%] cs:mt-[10%]"
+        class="lg:w-[100%] flex-col mx-auto cs:w-[100%] items-center justify-center flex lg:mt-[3%] cs:mt-[10%]"
       >
         <div class="w-[100%] rounded-2xl sm:max-w-md xl:p-0">
           <div class="cs:px-5 lg:p-3 space-y-5 cs:w-[100%]">

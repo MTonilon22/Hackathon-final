@@ -4,28 +4,28 @@
       class="border-gray-200 dark:bg-gray-900 py-5 items-center justify-center flex mx-auto"
     >
       <div
-        class="flex custom-sm:justify-center custom-sm:items-center p-4 md:mx-auto"
+        class="flex cs:justify-center cs:items-center p-4 md:mx-auto"
       >
         <div
-          class="flex mx-auto items-center justify-center custom-sm:items-center custom-sm:justify-center custom-sm:flex"
+          class="flex mx-auto items-center justify-center cs:items-center cs:justify-center cs:flex"
         >
           <img
             src="src/assets/mgLogo.png"
-            class="lg:h-40 lg:w-50 md:h-20 md:w-35 custom-sm:w-[30%] custom-sm:h-[20%]"
+            class="lg:h-40 lg:w-50 md:h-20 md:w-35 cs:w-[30%] cs:h-[20%]"
             alt="megaland"
           />
           <span
-            class="text-xl font-semibold dark:text-white flex custom-sm:text-sm"
+            class="text-xl font-semibold dark:text-white flex cs:text-sm"
             >ADMINISTRATOR</span
           >
         </div>
       </div>
     </nav>
 
-    <div class="w-full lg:hidden md:block custom-sm:block bg-[#e9d8c5]">
+    <div class="w-full lg:hidden md:block cs:block bg-[#e9d8c5]">
       <button
         @click="toggleSidebar"
-        class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+        class="hover:underline cs:md sm:text-md lg:hidden ml-2"
       >
         <mdicon
           name="ReorderHorizontal"
@@ -43,7 +43,7 @@
     <div class="lg:block w-[100%] h-[100%] sticky top-0 bg-[#e9d8c5]">
       <div class="flex flex-row row-span-2">
         <aside
-          class="bg-primary w-[25%] border-dashed border-2 h-screen self-start sticky top-0 z-10 custom-sm:hidden sm:hidden md:hidden lg:block text-[#e9d8c5]"
+          class="bg-primary w-[25%] border-dashed border-2 h-screen self-start sticky top-0 z-10 cs:hidden sm:hidden md:hidden lg:block text-[#e9d8c5]"
         >
           <ul
             class="flex flex-col gap-10 justify-end hover: cursor-pointer mt-[25%] ml-10"
@@ -56,7 +56,7 @@
                 class="hover:text-white"
               />
               <button
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 @click="propertyListing"
               >
                 Property Listing
@@ -71,7 +71,7 @@
               />
               <button
                 @click="propertyTable"
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
               >
                 Property Table
               </button>
@@ -85,7 +85,7 @@
               />
               <button
                 @click="addAgent"
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
               >
                 Add Agent
               </button>
@@ -99,7 +99,7 @@
               />
               <button
                 @click="agentTable"
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
               >
                 Agent Table
               </button>
@@ -113,7 +113,7 @@
               />
               <button
                 @click="blogListing"
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
               >
                 Blog Listing
               </button>
@@ -127,7 +127,7 @@
               />
               <button
                 @click="blogTable"
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
               >
                 Blog Table
               </button>
@@ -141,7 +141,7 @@
               />
               <button
                 @click="logout"
-                class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
               >
                 Logout Account
               </button>
@@ -150,18 +150,18 @@
         </aside>
 
         <div
-          class="bg-[#e9d8c5] custom-sm:mb-[10%] lg:w-[100%] custom-sm:w-[90%] md:w-[90%] mx-auto"
+          class="bg-[#e9d8c5] cs:mb-[10%] lg:w-[100%] cs:w-[90%] md:w-[90%] mx-auto"
         >
           <div
             class="flex md:w-[90%] lg:w-[70%] mt-10 bg-gray-100 rounded-lg items-center justify-center mx-auto my-auto border-2 border-primary text-primary font-500 drop-shadow-lg"
           >
             <div class="text-center w-full my-auto lg:mx-auto mb-10">
-              <div class="custom-sm:text-md my-5 mx-5 font-bold">
+              <div class="cs:text-md my-5 mx-5 font-bold">
                 Fill out the form below to
                 <span class="text-orange-500"> List Blog</span>
               </div>
               <div
-                class="border-b-2 lg:text-md md:text-md border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold custom-sm:mt-[15%] custom-sm:text-sm"
+                class="border-b-2 lg:text-md md:text-md border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold cs:mt-[15%] cs:text-sm"
               >
                 Blog Listing
               </div>
@@ -194,7 +194,7 @@
                             v-model="iframe"
                             id="propertydesc"
                             type="textarea"
-                            class="block w-full px-4 py-2 h-[80px] border-0 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm custom-sm:text-sm sm:leading-6 focus:outline-none"
+                            class="block w-full px-4 py-2 h-[80px] border-0 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm cs:text-sm sm:leading-6 focus:outline-none"
                           ></textarea>
                         </div>
                       </div>
@@ -253,7 +253,7 @@
                           v-model="description"
                           id="propertydesc"
                           type="textarea"
-                          class="block w-full px-4 py-2 h-[80px] border-0 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm custom-sm:text-sm sm:leading-6 focus:outline-none"
+                          class="block w-full px-4 py-2 h-[80px] border-0 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm cs:text-sm sm:leading-6 focus:outline-none"
                         ></textarea>
                       </div>
 
@@ -330,11 +330,11 @@
                       </div>
 
                       <div
-                        class="text-xl font-bold my-5 absolute md:top-[46.5%] md:right-[29%] custom-sm:text-sm custom-sm:top-[58.5%] custom-sm:right-[25%]"
+                        class="text-xl font-bold my-5 absolute md:top-[46.5%] md:right-[29%] cs:text-sm cs:top-[58.5%] cs:right-[25%]"
                       ></div>
 
                       <div
-                        class="flex flex-col items-center space-x-4 md:my-20 custom-sm:mt-20 gap-5"
+                        class="flex flex-col items-center space-x-4 md:my-20 cs:mt-20 gap-5"
                       >
                         <!-- DYNAMIC AMENITIES -->
                         <div class="w-[100%] flex-col flex">
@@ -342,7 +342,7 @@
                             class="w-[100%] flex flex-col gap-3 items-center justify-center"
                           >
                             <div
-                              class="md:text-lg lg:text-md sm:text-sm md:my-10 lg:w-[120%] md:w-[110%] lg:ml-[-8%] md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start custom-sm:w-[120%] custom-sm:ml-[-10%] mx-auto font-bold custom-sm:my-[10%] custom-sm:text-sm"
+                              class="md:text-lg lg:text-md sm:text-sm md:my-10 lg:w-[120%] md:w-[110%] lg:ml-[-8%] md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start cs:w-[120%] cs:ml-[-10%] mx-auto font-bold cs:my-[10%] cs:text-sm"
                             >
                               ⭐Amenities
                             </div>
@@ -365,7 +365,7 @@
                               <div class="flex justify-center mt-5 gap-5">
                                 <button
                                   @click="addAmenity()"
-                                  class="lg:w-[10%] custom-sm:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-orange-500 font-medium rounded-lg text-sm py-2.5 text-center"
+                                  class="lg:w-[10%] cs:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-orange-500 font-medium rounded-lg text-sm py-2.5 text-center"
                                 >
                                   <mdicon
                                     name="PlusThick"
@@ -376,7 +376,7 @@
                                 </button>
                                 <button
                                   @click="removeAmenity()"
-                                  class="lg:w-[10%] custom-sm:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-red-500 font-medium rounded-lg text-sm py-2.5 text-center"
+                                  class="lg:w-[10%] cs:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-red-500 font-medium rounded-lg text-sm py-2.5 text-center"
                                 >
                                   <mdicon
                                     name="CloseCircle"
@@ -397,7 +397,7 @@
                             class="w-[100%] flex flex-col gap-3 items-center justify-center"
                           >
                             <div
-                              class="md:text-lg lg:text-md sm:text-sm md:my-10 lg:w-[120%] md:w-[110%] lg:ml-[-8%] md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start custom-sm:w-[120%] custom-sm:ml-[-10%] mx-auto font-bold custom-sm:my-[10%] custom-sm:text-sm"
+                              class="md:text-lg lg:text-md sm:text-sm md:my-10 lg:w-[120%] md:w-[110%] lg:ml-[-8%] md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start cs:w-[120%] cs:ml-[-10%] mx-auto font-bold cs:my-[10%] cs:text-sm"
                             >
                               ✔Highlight
                             </div>
@@ -421,7 +421,7 @@
                               >
                                 <button
                                   @click="addHighlight()"
-                                  class="lg:w-[10%] custom-sm:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-orange-500 font-medium rounded-lg text-sm py-2.5 text-center"
+                                  class="lg:w-[10%] cs:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-orange-500 font-medium rounded-lg text-sm py-2.5 text-center"
                                 >
                                   <mdicon
                                     name="PlusThick"
@@ -432,7 +432,7 @@
                                 </button>
                                 <button
                                   @click="removeHighlight()"
-                                  class="lg:w-[10%] custom-sm:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-red-500 font-medium rounded-lg text-sm py-2.5 text-center"
+                                  class="lg:w-[10%] cs:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-red-500 font-medium rounded-lg text-sm py-2.5 text-center"
                                 >
                                   <mdicon
                                     name="CloseCircle"
@@ -452,7 +452,7 @@
                           class="w-[100%] flex flex-col gap-3 items-center justify-center"
                         >
                           <div
-                            class="md:text-lg lg:text-md sm:text-sm md:my-10 lg:w-[120%] md:w-[110%] lg:ml-[-8%] md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start custom-sm:w-[120%] custom-sm:ml-[-10%] mx-auto font-bold custom-sm:my-[10%] custom-sm:text-sm"
+                            class="md:text-lg lg:text-md sm:text-sm md:my-10 lg:w-[120%] md:w-[110%] lg:ml-[-8%] md:ml-[-9%] mr-[-8%] border-b-2 border-dashed border-orange-500 flex justify-start items-start cs:w-[120%] cs:ml-[-10%] mx-auto font-bold cs:my-[10%] cs:text-sm"
                           >
                             📍Land Mark
                           </div>
@@ -476,7 +476,7 @@
                             >
                               <button
                                 @click="addLandmark()"
-                                class="lg:w-[10%] custom-sm:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-orange-500 font-medium rounded-lg text-sm py-2.5 text-center"
+                                class="lg:w-[10%] cs:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-orange-500 font-medium rounded-lg text-sm py-2.5 text-center"
                               >
                                 <mdicon
                                   name="PlusThick"
@@ -487,7 +487,7 @@
                               </button>
                               <button
                                 @click="removeLandmark()"
-                                class="lg:w-[10%] custom-sm:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-red-500 font-medium rounded-lg text-sm py-2.5 text-center"
+                                class="lg:w-[10%] cs:w-[5%] md:w-[8%] px-8 items-center justify-center flex text-black border bg-red-500 font-medium rounded-lg text-sm py-2.5 text-center"
                               >
                                 <mdicon
                                   name="CloseCircle"

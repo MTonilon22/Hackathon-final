@@ -1,7 +1,7 @@
 <template>
   <div class="flex text-[#2a2d57] mb-2 mt-4">
     <div
-      class="flex w-[16%] text-lg pl-3 ml-3 font-poppins font-bold custom-sm:hidden sm:hidden md:hidden lg:block items-center justify-center my-auto"
+      class="flex w-[16%] text-lg pl-3 ml-3 font-poppins font-bold cs:hidden sm:hidden md:hidden lg:block items-center justify-center my-auto"
     >
       Search Filter
     </div>
@@ -13,7 +13,7 @@
     <!-- Accordion -->
 
     <div
-      class="md:hidden sm:hidden custom-sm:hidden xl:block lg:block lg:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
+      class="md:hidden sm:hidden cs:hidden xl:block lg:block lg:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
     >
       <Accordion
         title="Company Names"
@@ -81,7 +81,7 @@
 
     <!-- Latest Sale -->
     <div
-      class="flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] custom-sm:gap-3 custom-sm:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-evenly"
+      class="flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] cs:gap-3 cs:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-evenly"
     >
       <Products
       v-for="(job,index) in jobs"
@@ -97,7 +97,7 @@
 
 
       <div
-        class="flex justify-center items-center custom-sm:my-5 custom-sm:w-[20%]"
+        class="flex justify-center items-center cs:my-5 cs:w-[20%]"
       >
         <Pagination
           :postCount="postCount"

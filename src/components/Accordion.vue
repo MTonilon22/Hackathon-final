@@ -2,7 +2,7 @@
   <div class="flex-col cursor-pointer pt-1 pb-4">
     <div>
       <!-- Accordion header -->
-      <div class="flex custom-sm:mb-3 sm:mb-3" @click="toggleAccordion">
+      <div class="flex cs:mb-3 sm:mb-3" @click="toggleAccordion">
         <div class="flex justify-center items-center w-[12%] mr-2">
           <!-- Chevron icon based on accordion state -->
           <ChevronUpIcon
@@ -12,7 +12,7 @@
           <ChevronDownIcon v-else class="h-[15px] w-[15px] text-[#2a2d57]" />
         </div>
         <div
-          class="flex items-center font-poppins font-bold custom-sm:text-white sm:text-white md:text-white lg:text-[#2a2d57] w-[88%]"
+          class="flex items-center font-poppins font-bold cs:text-white sm:text-white md:text-white lg:text-[#2a2d57] w-[88%]"
         >
           <!-- Title of the accordion -->
           {{ title }}
@@ -22,7 +22,7 @@
       <!-- Accordion content -->
       <div
         v-if="isActive"
-        class="custom-sm:text-[#fefefe] sm:text-[#fefefe] md:text-[#fefefe] lg:text-[#334054] font-500 font-poppins pl-4 pt-2"
+        class="cs:text-[#fefefe] sm:text-[#fefefe] md:text-[#fefefe] lg:text-[#334054] font-500 font-poppins pl-4 pt-2"
       >
         <div
           class="flex"

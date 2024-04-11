@@ -4,28 +4,28 @@
       class="border-gray-200 dark:bg-gray-900 py-5 items-center justify-center flex mx-auto"
     >
       <div
-        class="flex custom-sm:justify-center custom-sm:items-center p-4 md:mx-auto"
+        class="flex cs:justify-center cs:items-center p-4 md:mx-auto"
       >
         <div
-          class="flex mx-auto items-center justify-center custom-sm:items-center custom-sm:justify-center custom-sm:flex"
+          class="flex mx-auto items-center justify-center cs:items-center cs:justify-center cs:flex"
         >
           <img
             src="src/assets/mgLogo.png"
-            class="lg:h-40 lg:w-50 md:h-20 md:w-35 custom-sm:w-[30%] custom-sm:h-[20%]"
+            class="lg:h-40 lg:w-50 md:h-20 md:w-35 cs:w-[30%] cs:h-[20%]"
             alt="megaland"
           />
           <span
-            class="text-xl font-semibold dark:text-white flex custom-sm:text-sm"
+            class="text-xl font-semibold dark:text-white flex cs:text-sm"
             >ADMINISTRATOR</span
           >
         </div>
       </div>
     </nav>
 
-    <div class="w-full lg:hidden md:block custom-sm:block bg-[#e9d8c5]">
+    <div class="w-full lg:hidden md:block cs:block bg-[#e9d8c5]">
       <button
         @click="toggleSidebar"
-        class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+        class="hover:underline cs:md sm:text-md lg:hidden ml-2"
       >
         <mdicon
           name="ReorderHorizontal"
@@ -43,7 +43,7 @@
   <div class="lg:block w-[100%] h-[100%] sticky top-0 bg-[#e9d8c5]">
     <div class="flex flex-row row-span-2">
       <aside
-        class="bg-primary w-[20%] border-dashed border-2 h-screen self-start sticky top-0 z-10 custom-sm:hidden sm:hidden md:hidden lg:block text-[#e9d8c5]"
+        class="bg-primary w-[20%] border-dashed border-2 h-screen self-start sticky top-0 z-10 cs:hidden sm:hidden md:hidden lg:block text-[#e9d8c5]"
       >
         <ul
           class="flex flex-col gap-10 justify-end hover: cursor-pointer mt-[25%] ml-10"
@@ -57,7 +57,7 @@
             />
             <button
               @click="propertyListing"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Property Listing
             </button>
@@ -71,7 +71,7 @@
             />
             <button
               @click="propertyTable"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Property Table
             </button>
@@ -85,7 +85,7 @@
             />
             <button
               @click="addAgent"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Add Agent
             </button>
@@ -99,7 +99,7 @@
             />
             <button
               @click="agentTable"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Agent Table
             </button>
@@ -113,7 +113,7 @@
             />
             <button
               @click="blogListing"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Blog Listing
             </button>
@@ -127,7 +127,7 @@
             />
             <button
               @click="blogTable"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Blog Table
             </button>
@@ -141,24 +141,24 @@
             />
             <button
               @click="logout"
-              class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+              class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             >
               Logout Account
             </button>
           </li>
         </ul>
       </aside>
-      <div class="bg-[#e9d8c5] custom-sm:mb-[10%] lg:w-[60%] mx-auto my-5">
+      <div class="bg-[#e9d8c5] cs:mb-[10%] lg:w-[60%] mx-auto my-5">
         <div
           class="flex md:w-[100%] lg:w-[80%] mt-10 bg-gray-100 rounded-lg items-center justify-center mx-auto my-auto border-2 border-primary text-primary font-500 drop-shadow-lg"
         >
           <div class="text-center w-full my-auto lg:mx-auto mb-10">
-            <div class="custom-sm:text-md my-5 mx-5 font-bold">
+            <div class="cs:text-md my-5 mx-5 font-bold">
               Fill out the form below to
               <span class="text-orange-500"> Create Agent</span>
             </div>
             <div
-              class="border-b-2 border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold custom-sm:mt-[15%] custom-sm:text-sm"
+              class="border-b-2 border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold cs:mt-[15%] cs:text-sm"
             >
               Agent's Data
             </div>

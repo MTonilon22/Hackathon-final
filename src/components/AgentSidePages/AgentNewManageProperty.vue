@@ -1,12 +1,12 @@
 <template>
-  <div class="h-full custom-sm:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%]">
+  <div class="h-full cs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%]">
     <div class="lg:block w-[100%] h-[100%] sticky top-0 bg-[#e9d8c5]">
       <div class="flex flex-row row-span-2">
         <div
-          class="custom-sm:w-[90%] custom-sm:h-[830px] md:w-[90%] mx-auto lg:w-[80%] md:h-[900px] md:mt-[10%] lg:mt-[5%] bg-[#e9d8c5]"
+          class="cs:w-[90%] cs:h-[830px] md:w-[90%] mx-auto lg:w-[80%] md:h-[900px] md:mt-[10%] lg:mt-[5%] bg-[#e9d8c5]"
         >
           <div
-            class="custom-sm:w-[100%] md:w-[100%] lg:w-[90%] mt-[5%] border-2 rounded-lg px-5 py-5 bg-white mx-auto"
+            class="cs:w-[100%] md:w-[100%] lg:w-[90%] mt-[5%] border-2 rounded-lg px-5 py-5 bg-white mx-auto"
           >
             <div class="flex justify-start items-center">
               <mdicon
@@ -54,7 +54,7 @@
                 <select
                   v-model="property_enable"
                   id="propertystatus"
-                  class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 custom-sm:text-sm custom-sm:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
+                  class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 cs:text-sm cs:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
                 >
                   <option class="block mb-2 text-sm font-medium" value="Enable">
                     Enable
@@ -77,10 +77,10 @@
           </div>
 
           <div
-            class="rounded-lg mx-auto lg:w-[100%] lg:h-[450px] custom-sm:w-[100%] custom-sm:h-[330px] md:h-[500px] md:w-[100%] lg:mt-20 md:mt-20 custom-sm:mt-10"
+            class="rounded-lg mx-auto lg:w-[100%] lg:h-[450px] cs:w-[100%] cs:h-[330px] md:h-[500px] md:w-[100%] lg:mt-20 md:mt-20 cs:mt-10"
           >
             <div
-              class="relative overflow-x-auto my-[5%] lg:w-[90%] lg:h-[100%] lg:mx-auto lg:my-[8%] custom-sm:w-[100%] custom-sm:h-[110%] md:w-[100%] md:h-[100%] md:my-[0%] mx-auto rounded-lg custom-sm:mt-[8%]"
+              class="relative overflow-x-auto my-[5%] lg:w-[90%] lg:h-[100%] lg:mx-auto lg:my-[8%] cs:w-[100%] cs:h-[110%] md:w-[100%] md:h-[100%] md:my-[0%] mx-auto rounded-lg cs:mt-[8%]"
             >
               <table class="text-left rtl:text-right overflow-y-auto">
                 <thead
@@ -111,9 +111,9 @@
                         />
                       </div>
                     </th>
-                    <td class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]">
+                    <td class="cs:w-[20%] cs:h-[20%] md:w-[10%]">
                       <img
-                        class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                        class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                         src="src/assets/images/Youtube-Images/image1.png"
                       />
                     </td>
@@ -142,9 +142,9 @@
                         />
                       </div>
                     </th>
-                    <td class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]">
+                    <td class="cs:w-[20%] cs:h-[20%] md:w-[10%]">
                       <img
-                        class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                        class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                         src="src/assets/images/Youtube-Images/image1.png"
                       />
                     </td>
@@ -172,9 +172,9 @@
                         />
                       </div>
                     </th>
-                    <td class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]">
+                    <td class="cs:w-[20%] cs:h-[20%] md:w-[10%]">
                       <img
-                        class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                        class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                         src="src/assets/images/Youtube-Images/image1.png"
                       />
                     </td>

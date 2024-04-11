@@ -5,7 +5,7 @@
     <div class="">
       <div class="">
         <iframe
-          class="border-2 border-black custom-sm:w-[90%] sm:w-[90%] sm:h-[300px] custom-sm:h-[300px] mx-auto md:w-[100%] md:h-[500px] lg:w-[100%]"
+          class="border-2 border-black cs:w-[90%] sm:w-[90%] sm:h-[300px] cs:h-[300px] mx-auto md:w-[100%] md:h-[500px] lg:w-[100%]"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5483668762135!2d123.89617127595324!3d10.29792626783563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999a0c575cff7%3A0x76271c50dbf0b3b2!2sMegaland%20Realty!5e0!3m2!1sen!2sph!4v1697273626082!5m2!1sen!2sph"
           style="border: 0"
           loading="lazy"
@@ -14,12 +14,12 @@
       </div>
       <div class="">
         <div
-          class="flex mt-10 shadow-2xl bg-gray-100 rounded-xl p-5 custom-sm:flex custom-sm:flex-col custom-sm:w-[90%] sm:w-[90%] md:w-[100%] custom-sm:mx-auto sm:mx-auto"
+          class="flex mt-10 shadow-2xl bg-gray-100 rounded-xl p-5 cs:flex cs:flex-col cs:w-[90%] sm:w-[90%] md:w-[100%] cs:mx-auto sm:mx-auto"
         >
           <div
-            class="lg:w-[50%] custom-sm:w-[100%] sm:w-[50%] custom-sm:h-[250px] md:w-[50%] flex flex-col lg:pt-5 bg-[#2a2d57] text-[#ffffff] lg:p-10 justify-center rounded-3xl"
+            class="lg:w-[50%] cs:w-[100%] sm:w-[50%] cs:h-[250px] md:w-[50%] flex flex-col lg:pt-5 bg-[#2a2d57] text-[#ffffff] lg:p-10 justify-center rounded-3xl"
           >
-            <div class="lg:mb-10 lg:mr-3 flex custom-sm:mt-[10%]">
+            <div class="lg:mb-10 lg:mr-3 flex cs:mt-[10%]">
               <div class="flex items-center mx-3">
                 <mdicon
                   name="map-marker"
@@ -29,7 +29,7 @@
                 />
               </div>
               <div
-                class="font-poppins font-bold md:text-md sm:text-sm custom-sm:text-xs"
+                class="font-poppins font-bold md:text-md sm:text-sm cs:text-xs"
               >
                 <div class="font-semibold">
                   Unit 101,148 Residences Pelaez St. Kalubihan
@@ -38,24 +38,24 @@
               </div>
             </div>
             <div
-              class="lg:mb-10 lg:mr-3 flex md:my-[10%] sm:my-[10%] custom-sm:my-[10%] lg:my-[0%]"
+              class="lg:mb-10 lg:mr-3 flex md:my-[10%] sm:my-[10%] cs:my-[10%] lg:my-[0%]"
             >
               <div class="flex items-center ml-3">
                 <mdicon
                   name="phone"
                   :width="30"
                   :height="30"
-                  class="hover:text-orange-500 md:mr-5 lg:mr-5 custom-sm:mr-2 sm:mr-2"
+                  class="hover:text-orange-500 md:mr-5 lg:mr-5 cs:mr-2 sm:mr-2"
                 />
               </div>
               <div class="">
                 <div
-                  class="sm:text-sm custom-sm:text-xs md:text-md font-poppins font-bold"
+                  class="sm:text-sm cs:text-xs md:text-md font-poppins font-bold"
                 >
                   +63-977-382-4416
                 </div>
                 <div
-                  class="text-gray-50 sm:text-sm custom-sm:text-xs md:text-md font-poppins font-bold"
+                  class="text-gray-50 sm:text-sm cs:text-xs md:text-md font-poppins font-bold"
                 >
                   Mon - Sat,10 Am - 6 Pm
                 </div>
@@ -67,24 +67,24 @@
                   name="calendar-badge"
                   :width="30"
                   :height="30"
-                  class="hover:text-orange-500 md:mr-5 lg:mr-5 custom-sm:mr-2 sm:mr-2"
+                  class="hover:text-orange-500 md:mr-5 lg:mr-5 cs:mr-2 sm:mr-2"
                 />
               </div>
               <div class="">
                 <div
-                  class="sm:text-sm custom-sm:text-xs md:text-md font-poppins font-bold"
+                  class="sm:text-sm cs:text-xs md:text-md font-poppins font-bold"
                 >
                   megalandrealtycebu @gmail.com
                 </div>
                 <div
-                  class="text-gray-50 sm:text-sm custom-sm:text-xs md:text-md font-poppins font-bold"
+                  class="text-gray-50 sm:text-sm cs:text-xs md:text-md font-poppins font-bold"
                 >
                   Email us your query
                 </div>
               </div>
             </div>
           </div>
-          <div class="lg:w-[50%] pt-5 custom-sm:pt-[10%]">
+          <div class="lg:w-[50%] pt-5 cs:pt-[10%]">
             <div class="flex">
               <div class="relative ml-3 mb-3 w-[50%]">
                 <input

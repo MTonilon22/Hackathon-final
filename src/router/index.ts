@@ -3,6 +3,21 @@ import type { RouteRecordRaw } from "vue-router";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
+    name: "Landing",
+    component: () => import("../MainPages/LandingPage.vue"),
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: () => import("../MainPages/LoginPage.vue"),
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import("../MainPages/RegisterPage.vue"),
+  },
+  {
+    path: "/home",
     name: "Home",
     component: () => import("../MainPages/Home.vue"),
   },

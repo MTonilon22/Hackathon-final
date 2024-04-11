@@ -1,11 +1,11 @@
 <template>
   <div
-    class="custom-sm:w-[95%] sm:w-[100%] md:w-[60%] lg:w-[55%] lg:ml-[1%] bg-white custom-sm:m-2 p-5 border-2 rounded-md shadow-xl"
+    class="cs:w-[95%] sm:w-[100%] md:w-[60%] lg:w-[55%] lg:ml-[1%] bg-white cs:m-2 p-5 border-2 rounded-md shadow-xl"
   >
     <div class="">
       <div class="flex flex-col justify-center md:items-center mt-3">
         <div
-          class="custom-sm:mb-5 custom-sm:mx-auto custom-sm:w-[300px] sm:mb-5 sm:w-[330px] md:w-[100%] lg:w-[100%] mx-auto lg:ml-[-9%]"
+          class="cs:mb-5 cs:mx-auto cs:w-[300px] sm:mb-5 sm:w-[330px] md:w-[100%] lg:w-[100%] mx-auto lg:ml-[-9%]"
         >
           <div class="iframe-container">
             <div><img src="../assets/soft-eng.png" alt="" /></div>
@@ -86,7 +86,7 @@
             <div
               class="flex lg:w-full text-[#2a2d57] lg:ml-3 lg:mb-2 md:ml-1 md:mb-1"
             >
-              <div class="flex text-lg font-semibold pl-3 custom-sm:my-4">
+              <div class="flex text-lg font-semibold pl-3 cs:my-4">
                 Comments:
                 <ChatBubbleLeftIcon
                   class="h-[26px] w-[26px] ml-1 text-[#2a2d57]"
@@ -162,7 +162,7 @@ defineProps({
 
 <style>
 @media (min-width: 300px) and (max-width: 400px) {
-  /* CSS styles for extra custom-small screens */
+  /* CSS styles for extra csall screens */
   .iframe-container {
     width: 100%; /* Customize as needed */
     height: 100%;
@@ -182,7 +182,7 @@ defineProps({
 }
 
 @media (min-width: 400px) and (max-width: 640px) {
-  /* CSS styles for custom-small screens */
+  /* CSS styles for csall screens */
   .iframe-container {
     width: 100%; /* Customize as needed */
     height: 100%;

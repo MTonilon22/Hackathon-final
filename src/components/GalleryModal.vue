@@ -34,7 +34,7 @@
               <!-- swiper-slide content -->
 
               <swiper-container
-                class="w-full custom-sm:h-[280px]"
+                class="w-full cs:h-[280px]"
                 :cssMode="true"
                 loop="true"
                 :centeredSlides="true"
@@ -44,7 +44,7 @@
               >
                 <swiper-slide>
                   <img
-                    class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] h-full object-cover"
+                    class="w-full cs:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] h-full object-cover"
                     src="../assets/gal1.jpg"
                     alt=""
                   />
@@ -52,7 +52,7 @@
                 >
                 <swiper-slide>
                   <img
-                    class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] h-full object-cover"
+                    class="w-full cs:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] h-full object-cover"
                     src="../assets/gal2.jpg"
                     alt=""
                   />
@@ -60,7 +60,7 @@
                 >
                 <swiper-slide>
                   <img
-                    class="w-full custom-sm:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] h-full object-cover"
+                    class="w-full cs:h-[230px] sm:h-[250px] md:h-[350px] lg:h-[550px] h-full object-cover"
                     src="../assets/gal3.jpg"
                     alt=""
                   />

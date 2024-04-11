@@ -2,7 +2,7 @@
 <template>
   <div
     v-if="isVisible"
-    class="custom-sm:overflow-y-auto sm:overflow-y-auto md:overflow-y-auto fixed top-0 left-0 custom-sm:w-64 custom-sm:h-[100%] sm:h-[100%] md:h-[100%] md:w-[50%] bg-[#454544] text-orange-500 p-2 z-10 lg:hidden"
+    class="cs:overflow-y-auto sm:overflow-y-auto md:overflow-y-auto fixed top-0 left-0 cs:w-64 cs:h-[100%] sm:h-[100%] md:h-[100%] md:w-[50%] bg-[#454544] text-orange-500 p-2 z-10 lg:hidden"
   >
     <div class="flex my-2">
       <mdicon
@@ -13,7 +13,7 @@
       />
       <button
         @click="toggleSidebar"
-        class="text-orange-500 custom-sm:ml-[70%] sm:ml-[70%] md:ml-[75%]"
+        class="text-orange-500 cs:ml-[70%] sm:ml-[70%] md:ml-[75%]"
       >
         <mdicon
           name="CloseCircle"
@@ -30,7 +30,7 @@
       >
         <div class="flex w-[90%] justify-center items-center gap-1">
           <input
-            class="border-[#2a2d57] text-black font-poppins font-bold rounded md:w-[70%] custom-sm:w-[80%] h-11 focus:outline-none hover:shadow-2xl pl-3"
+            class="border-[#2a2d57] text-black font-poppins font-bold rounded md:w-[70%] cs:w-[80%] h-11 focus:outline-none hover:shadow-2xl pl-3"
             type="text"
             name=""
             id="search_bar"
@@ -50,7 +50,7 @@
       <li class="flex">
         <mdicon name="Home" :width="30" :height="30" class="hover:text-white" />
         <router-link
-          class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+          class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
           to="/"
           >Home</router-link
         >
@@ -63,7 +63,7 @@
           class="hover:text-white"
         />
         <router-link
-          class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+          class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
           to="/properties/"
           >Properties</router-link
         >
@@ -76,7 +76,7 @@
           class="hover:text-white"
         />
         <router-link
-          class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+          class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
           to="/PropertyNews"
           >Property News</router-link
         >
@@ -90,7 +90,7 @@
             class="hover:text-white"
           />
           <router-link
-            class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+            class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
             to="/about"
             >About Us</router-link
           >
@@ -105,7 +105,7 @@
           class="hover:text-white"
         />
         <router-link
-          class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+          class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
           to="/contact"
           >Contact Us</router-link
         >
@@ -119,7 +119,7 @@
           class="hover:text-white"
         />
         <router-link
-          class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+          class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
           to="/properties/1"
           >Logout</router-link
         >

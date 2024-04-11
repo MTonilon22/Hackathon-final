@@ -1,14 +1,14 @@
 <template>
   <!-- Navigation Bar E67E23 -->
   <div
-    class="bg-[#2a2d57] custom-sm:sticky custom-sm:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10"
+    class="bg-[#2a2d57] cs:sticky cs:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10"
   >
     <ul
-      class="flex justify-end gap-6 hover: cursor-pointer custom-sm:hidden font-poppins font-bold"
+      class="flex justify-end gap-6 hover: cursor-pointer cs:hidden font-poppins font-bold"
     >
       <li class="">
         <router-link
-          class="hover-underline custom-sm:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
+          class="hover-underline cs:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
           to="/"
           >Home</router-link
         >
@@ -16,7 +16,7 @@
     </ul>
     <button
       @click="toggleSidebar"
-      class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+      class="hover:underline cs:md sm:text-md lg:hidden ml-2"
     >
       <mdicon
         name="ReorderHorizontal"
@@ -30,7 +30,7 @@
   <SideBar :isVisible="isSidebarVisible" :toggleSidebar="toggleSidebar" />
 
   <!-- Search and Logo Bar -->
-  <div class="custom-sm:hidden sm:hidden md:hidden lg:block sticky">
+  <div class="cs:hidden sm:hidden md:hidden lg:block sticky">
     <div class="flex lg:h-14 sticky top-11 bg-white">
       <div class="flex w-[10%] pl-3">
         <img src="../assets/mgLogo.jpg" alt="" />

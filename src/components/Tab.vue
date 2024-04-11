@@ -34,7 +34,7 @@ export default {
 </style>
 
 <!-- <div
-      class="custom-sm:w-[90%] md:w-[80%] mt-[10%] border-2 rounded-lg px-5 py-5 bg-white mx-auto"
+      class="cs:w-[90%] md:w-[80%] mt-[10%] border-2 rounded-lg px-5 py-5 bg-white mx-auto"
     >
       <div class="flex justify-start items-center">
         <mdicon
@@ -74,7 +74,7 @@ export default {
           <select
             v-model="property_enable"
             id="propertystatus"
-            class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 custom-sm:text-sm custom-sm:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
+            class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 cs:text-sm cs:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
           >
             <option class="block mb-2 text-sm font-medium" value="Enable">
               Enable
@@ -97,7 +97,7 @@ export default {
     </div>
     <div class="w-[90%] mx-auto">
       <div class="relative">
-        <div class="font-semibold text-lg md:ml-8 custom-sm:ml-0 mt-[15%]">
+        <div class="font-semibold text-lg md:ml-8 cs:ml-0 mt-[15%]">
           Agent's Table
         </div>
         <div
@@ -130,9 +130,9 @@ export default {
                     />
                   </div>
                 </th>
-                <td class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]">
+                <td class="cs:w-[20%] cs:h-[20%] md:w-[10%]">
                   <img
-                    class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                    class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                     src="src/assets/marivil.png"
                   />
                 </td>
@@ -159,9 +159,9 @@ export default {
                     />
                   </div>
                 </th>
-                <td class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]">
+                <td class="cs:w-[20%] cs:h-[20%] md:w-[10%]">
                   <img
-                    class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                    class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                     src="src/assets/marivil.png"
                   />
                 </td>
@@ -185,9 +185,9 @@ export default {
                     />
                   </div>
                 </th>
-                <td class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]">
+                <td class="cs:w-[20%] cs:h-[20%] md:w-[10%]">
                   <img
-                    class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                    class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                     src="src/assets/marivil.png"
                   />
                 </td>

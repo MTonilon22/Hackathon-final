@@ -5,28 +5,28 @@
         class="border-gray-200 dark:bg-gray-900 py-5 items-center justify-center flex mx-auto"
       >
         <div
-          class="flex custom-sm:justify-center custom-sm:items-center p-4 md:mx-auto"
+          class="flex cs:justify-center cs:items-center p-4 md:mx-auto"
         >
           <div
-            class="flex mx-auto items-center justify-center custom-sm:items-center custom-sm:justify-center custom-sm:flex"
+            class="flex mx-auto items-center justify-center cs:items-center cs:justify-center cs:flex"
           >
             <img
               src="src/assets/mgLogo.png"
-              class="lg:h-40 lg:w-50 md:h-20 md:w-35 custom-sm:w-[30%] custom-sm:h-[20%]"
+              class="lg:h-40 lg:w-50 md:h-20 md:w-35 cs:w-[30%] cs:h-[20%]"
               alt="megaland"
             />
             <span
-              class="text-xl font-semibold dark:text-white flex custom-sm:text-sm"
+              class="text-xl font-semibold dark:text-white flex cs:text-sm"
               >ADMINISTRATOR</span
             >
           </div>
         </div>
       </nav>
 
-      <div class="w-full lg:hidden md:block custom-sm:block bg-[#e9d8c5]">
+      <div class="w-full lg:hidden md:block cs:block bg-[#e9d8c5]">
         <button
           @click="toggleSidebar"
-          class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+          class="hover:underline cs:md sm:text-md lg:hidden ml-2"
         >
           <mdicon
             name="ReorderHorizontal"
@@ -43,7 +43,7 @@
       <div class="lg:block w-[100%] h-[100%] sticky top-0 bg-[#e9d8c5]">
         <div class="flex flex-row row-span-2">
           <aside
-            class="bg-primary w-[20%] border-dashed border-2 h-screen self-start sticky top-0 z-10 custom-sm:hidden sm:hidden md:hidden lg:block text-[#e9d8c5]"
+            class="bg-primary w-[20%] border-dashed border-2 h-screen self-start sticky top-0 z-10 cs:hidden sm:hidden md:hidden lg:block text-[#e9d8c5]"
           >
             <ul
               class="flex flex-col gap-10 justify-end hover: cursor-pointer mt-[25%] ml-10"
@@ -57,7 +57,7 @@
                 />
                 <button
                   @click="propertyListing"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Property Listing
                 </button>
@@ -71,7 +71,7 @@
                 />
                 <button
                   @click="propertyTable"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Property Table
                 </button>
@@ -85,7 +85,7 @@
                 />
                 <button
                   @click="addAgent"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Add Agent
                 </button>
@@ -99,7 +99,7 @@
                 />
                 <button
                   @click="agentTable"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Agent Table
                 </button>
@@ -113,7 +113,7 @@
                 />
                 <button
                   @click="blogListing"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Blog Listing
                 </button>
@@ -127,7 +127,7 @@
                 />
                 <button
                   @click="blogTable"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Blog Table
                 </button>
@@ -141,7 +141,7 @@
                 />
                 <button
                   @click="logout"
-                  class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
+                  class="hover-underline text-white font-poppins font-bold cs:mt-1 sm:mt-1 sm:ml-4 cs:ml-4"
                 >
                   Logout Account
                 </button>
@@ -149,10 +149,10 @@
             </ul>
           </aside>
           <div
-            class="custom-sm:w-[90%] custom-sm:h-[750px] md:w-[90%] mx-auto lg:w-[80%] md:h-[750px] md:mt-[5%] lg:mt-[1%]"
+            class="cs:w-[90%] cs:h-[750px] md:w-[90%] mx-auto lg:w-[80%] md:h-[750px] md:mt-[5%] lg:mt-[1%]"
           >
             <div
-              class="custom-sm:w-[100%] md:w-[100%] lg:w-[90%] mt-[5%] border-2 rounded-lg px-5 py-5 bg-white mx-auto"
+              class="cs:w-[100%] md:w-[100%] lg:w-[90%] mt-[5%] border-2 rounded-lg px-5 py-5 bg-white mx-auto"
             >
               <div class="flex justify-start items-center">
                 <mdicon
@@ -200,7 +200,7 @@
                   <select
                     v-model="property_enable"
                     id="propertystatus"
-                    class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 custom-sm:text-sm custom-sm:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
+                    class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-primary placeholder:text-gray-400 cs:text-sm cs:leading-6 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
                   >
                     <option
                       class="block mb-2 text-sm font-medium"
@@ -226,10 +226,10 @@
             </div>
 
             <div
-              class="rounded-lg mx-auto lg:w-[100%] lg:h-[450px] custom-sm:w-[100%] custom-sm:h-[330px] md:h-[500px] md:w-[100%] lg:mt-20 md:mt-20 custom-sm:mt-10"
+              class="rounded-lg mx-auto lg:w-[100%] lg:h-[450px] cs:w-[100%] cs:h-[330px] md:h-[500px] md:w-[100%] lg:mt-20 md:mt-20 cs:mt-10"
             >
               <div
-                class="relative overflow-x-auto my-[5%] lg:w-[90%] lg:h-[100%] lg:mx-auto lg:my-[8%] custom-sm:w-[110%] custom-sm:h-[100%] md:w-[100%] md:h-[100%] md:my-[0%] mx-auto rounded-lg custom-sm:mt-[8%]"
+                class="relative overflow-x-auto my-[5%] lg:w-[90%] lg:h-[100%] lg:mx-auto lg:my-[8%] cs:w-[110%] cs:h-[100%] md:w-[100%] md:h-[100%] md:my-[0%] mx-auto rounded-lg cs:mt-[8%]"
               >
                 <table class="text-left rtl:text-right">
                   <thead class="text-[8.5px] uppercase bg-gray-200">
@@ -267,10 +267,10 @@
                         </div>
                       </th>
                       <td
-                        class="custom-sm:w-[20%] custom-sm:h-[20%] md:w-[10%]"
+                        class="cs:w-[20%] cs:h-[20%] md:w-[10%]"
                       >
                         <img
-                          class="md:w-[80%] lg:w-[80%] custom-sm:w-[80%] mx-auto my-2"
+                          class="md:w-[80%] lg:w-[80%] cs:w-[80%] mx-auto my-2"
                           :src="agent.image"
                         />
                       </td>

@@ -1,11 +1,11 @@
 <template>
   <div
-    class="h-screen custom-sm:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] bg-[#e9d8c5]"
+    class="h-screen cs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] bg-[#e9d8c5]"
   >
-    <div class="w-full lg:hidden md:block custom-sm:block bg-[#e9d8c5]">
+    <div class="w-full lg:hidden md:block cs:block bg-[#e9d8c5]">
       <!-- <button
         @click="toggleSidebar"
-        class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+        class="hover:underline cs:md sm:text-md lg:hidden ml-2"
       >
         <mdicon
           name="ReorderHorizontal"
@@ -22,7 +22,7 @@
     <div class="lg:block w-[100%] h-[100%] sticky top-0 bg-[#e9d8c5]">
       <div class="flex flex-row row-span-2">
         <div
-          class="flex flex-col items-center justify-center custom-sm:w-[90%] mx-auto custom-sm:mt-[15%] lg:mt-[-10%] md:w-[80%] lg:w-[80%] md:py-[8%]"
+          class="flex flex-col items-center justify-center cs:w-[90%] mx-auto cs:mt-[15%] lg:mt-[-10%] md:w-[80%] lg:w-[80%] md:py-[8%]"
         >
           <div
             class="md:mt-[10%] lg:mt-[10%] md:w-[100%] lg:w-[50%] p-6 bg-white rounded-lg shadow md:py-[5%]"
@@ -32,7 +32,7 @@
             >
               <img
                 src="src/assets/mgLogo.png"
-                class="lg:h-40 lg:w-50 md:h-20 md:w-35 custom-sm:w-[30%] custom-sm:h-[20%] mx-auto"
+                class="lg:h-40 lg:w-50 md:h-20 md:w-35 cs:w-[30%] cs:h-[20%] mx-auto"
                 alt="megaland"
               />
             </h2>

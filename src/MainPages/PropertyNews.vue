@@ -2,24 +2,24 @@
   <div class="p-3">
     <div class="flex text-[#2a2d57] mb-2 md:">
       <div
-        class="flex w-[16%] text-lg pl-3 font-poppins font-bold md:text-md lg:text-lg custom-sm:hidden sm:hidden md:hidden lg:block"
+        class="flex w-[16%] text-lg pl-3 font-poppins font-bold md:text-md lg:text-lg cs:hidden sm:hidden md:hidden lg:block"
       >
         Search Filter
       </div>
       <div
-        class="flex w-[56%] custom-sm:ml-[2%] text-lg lg:ml-[2%] lg:pl-5 font-poppins font-bold"
+        class="flex w-[56%] cs:ml-[2%] text-lg lg:ml-[2%] lg:pl-5 font-poppins font-bold"
       >
         Blog <NewspaperIcon class="h-[26px] w-[26px] ml-1" />
       </div>
       <div
-        class="custom-sm:hidden flex w-[30%] text-lg font-poppins font-bold md:ml-9 lg:ml-[10%]"
+        class="cs:hidden flex w-[30%] text-lg font-poppins font-bold md:ml-9 lg:ml-[10%]"
       >
         All <mdicon class="ml-2" name="post-outline" :width="26" :height="26" />
       </div>
     </div>
-    <div class="flex custom-sm:flex custom-sm:flex-col">
+    <div class="flex cs:flex cs:flex-col">
       <div
-        class="md:hidden sm:hidden custom-sm:hidden xl:block lg:block lg:h-[700px] custom-sm:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
+        class="md:hidden sm:hidden cs:hidden xl:block lg:block lg:h-[700px] cs:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
       >
         <div class="h-[700px] flex-col overflow-auto">
           <BlogOwner
@@ -48,10 +48,10 @@
       />
 
       <div
-        class="lg:w-[25%] md:w-[100%] lg:mr-6 custom-sm:flex custom-sm:flex-col"
+        class="lg:w-[25%] md:w-[100%] lg:mr-6 cs:flex cs:flex-col"
       >
         <div
-          class="custom-sm:block md:hidden lg:hidden flex w-[30%] text-lg flex-row font-poppins font-bold md:ml-9 lg:ml-[10%] text-orange-500"
+          class="cs:block md:hidden lg:hidden flex w-[30%] text-lg flex-row font-poppins font-bold md:ml-9 lg:ml-[10%] text-orange-500"
         >
           <span class="flex-row w-[200px] flex my-3 ml-2"
             ><h3 class="flex">
@@ -67,7 +67,7 @@
         </div>
 
         <div
-          class="custom-sm:flex custom-sm:flex-col custom-sm:h-[300px] custom-sm:w-[95%] custom-sm:mx-auto lg:w-full lg:h-[480px] overflow-auto bg-white border-2 custom-sm:hover:border-orange-500 rounded-md shadow-xl lg:p-5 md:p-2 md:ml-2 lg:ml-5 mb-5"
+          class="cs:flex cs:flex-col cs:h-[300px] cs:w-[95%] cs:mx-auto lg:w-full lg:h-[480px] overflow-auto bg-white border-2 cs:hover:border-orange-500 rounded-md shadow-xl lg:p-5 md:p-2 md:ml-2 lg:ml-5 mb-5"
         >
           <Blog
             v-for="(blog, index) in allBlogs"

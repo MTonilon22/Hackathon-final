@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation Bar E67E23 -->
   <div class="flex flex-row bg-[#2a2d57]">
-    <div class="custom-sm:hidden sm:hidden md:hidden lg:block sticky">
+    <div class="cs:hidden sm:hidden md:hidden lg:block sticky">
       <div class="flex lg:h-14 sticky top-11 bg-[#2a2d57]">
         <div
           class="flex w-[100%] justify-end items-center pr-3 ml-5 bg-[#2a2d57]"
@@ -34,36 +34,36 @@
       />
     </div>
     <div
-      class="bg-[#2a2d57] custom-sm:sticky custom-sm:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10 pr-10"
+      class="bg-[#2a2d57] cs:sticky cs:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10 pr-10"
     >
       <div></div>
       <ul
-        class="flex justify-end gap-6 hover: cursor-pointer custom-sm:hidden font-poppins font-bold"
+        class="flex justify-end gap-6 hover: cursor-pointer cs:hidden font-poppins font-bold"
       >
         <li class="">
           <router-link
-            class="hover-underline custom-sm:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
-            to="/"
+            class="hover-underline cs:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
+            to="/home"
             >Home</router-link
           >
         </li>
         <li class="">
           <router-link
-            class="hover-underline custom-sm:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
+            class="hover-underline cs:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
             to="/properties"
             >Schedule</router-link
           >
         </li>
         <li class="">
           <router-link
-            class="hover-underline custom-sm:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
+            class="hover-underline cs:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
             to="/PropertyNews"
             >Status</router-link
           >
         </li>
         <li class="">
           <router-link
-            class="hover-underline custom-sm:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
+            class="hover-underline cs:hidden sm:hidden md:hidden lg:block sm:text-base md:text-md lg:text-lg"
             to="/about"
             >Community</router-link
           >
@@ -71,7 +71,7 @@
       </ul>
       <button
         @click="toggleSidebar"
-        class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+        class="hover:underline cs:md sm:text-md lg:hidden ml-2"
       >
         <mdicon
           name="ReorderHorizontal"

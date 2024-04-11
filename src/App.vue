@@ -19,7 +19,7 @@
 
 <script lang="ts" setup>
 import NavBar from "./components/NavBar.vue";
-import Footer from "./components/Footer.vue";
+
 import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 
 const screenWidth = ref(0);

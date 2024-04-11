@@ -88,11 +88,11 @@
                 <div class="flex">
                   <div class="w-[50%]">
                     <div
-                      class="border-2 rounded-md md:m-1 md:p-2 lg:m-2 lg:p-1 font-normal lg:text-lg custom-sm:text-sm sm:text-sm md:text-md"
+                      class="border-2 rounded-md md:m-1 md:p-2 lg:m-2 lg:p-1 font-normal lg:text-lg cs:text-sm sm:text-sm md:text-md"
                     >
                       Address:
                       <span
-                        class="lg:text-lg md:text-md font-300 custom-sm:text-sm sm:text-sm"
+                        class="lg:text-lg md:text-md font-300 cs:text-sm sm:text-sm"
                       >
                         {{address}}</span
                       >
@@ -100,7 +100,7 @@
                     <div class="border-2 m-2 p-1 font-medium">
                       City:
                       <span
-                        class="text-base font-normal lg:text-lg md:text-md custom-sm:text-xs sm:text-xs"
+                        class="text-base font-normal lg:text-lg md:text-md cs:text-xs sm:text-xs"
                       >
                         {{city}}</span
                       >
@@ -111,7 +111,7 @@
                     <div class="border-2 m-2 p-1 font-medium">
                       State/Country:
                       <span
-                        class="text-base font-normal lg:text-lg md:text-md custom-sm:text-xs sm:text-xs"
+                        class="text-base font-normal lg:text-lg md:text-md cs:text-xs sm:text-xs"
                       >
                         {{ country }}
                       </span>

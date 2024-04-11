@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-[#e9d8c5] custom-sm:w-[100%] lg:w-[80%] h-full mx-auto">
+  <div class="bg-[#e9d8c5] cs:w-[100%] lg:w-[80%] h-full mx-auto">
     <div
-      class="w-full lg:hidden md:block custom-sm:block sm:block bg-[#e9d8c5]"
+      class="w-full lg:hidden md:block cs:block sm:block bg-[#e9d8c5]"
     >
       <!-- <button
         @click="toggleSidebar"
-        class="hover:underline custom-sm:md sm:text-md lg:hidden ml-2"
+        class="hover:underline cs:md sm:text-md lg:hidden ml-2"
       >
         <mdicon
           name="ReorderHorizontal"
@@ -23,10 +23,10 @@
     <div class="bg-gray-900 lg:block w-[100%] h-[100%] sticky top-0 mx-auto">
       <div class="flex flex-row row-span-2 bg-[#e9d8c5] ">
         <div class="lg:w-[80%] mx-auto">
-          <div class="lg:w-[100%] md:w-[100%] custom-sm:w-[100%]  my-[5%]">
-            <div class="flex flex-wrap mx-auto my-[5%] lg:w-[18%] md:w-[25%] custom-sm:w-[50%] bg-primary rounded-full h-[180px] border-2 "><span class="w-[90%] h-[90%] flex items-center justify-center rounded-full mx-auto my-auto bg-white"><img class="lg:w-[90%] lg:h-[90%] custom-sm:w-[100%] custom-sm:h-[100%] my-auto mx-auto rounded-full " src="/src/assets/marivil.png"/></span></div>
+          <div class="lg:w-[100%] md:w-[100%] cs:w-[100%]  my-[5%]">
+            <div class="flex flex-wrap mx-auto my-[5%] lg:w-[18%] md:w-[25%] cs:w-[50%] bg-primary rounded-full h-[180px] border-2 "><span class="w-[90%] h-[90%] flex items-center justify-center rounded-full mx-auto my-auto bg-white"><img class="lg:w-[90%] lg:h-[90%] cs:w-[100%] cs:h-[100%] my-auto mx-auto rounded-full " src="/src/assets/marivil.png"/></span></div>
             
-            <table class="table table-bordered lg:w-[100%] custom-sm:w-[90%] md:w-[90%] mx-auto text-xs">
+            <table class="table table-bordered lg:w-[100%] cs:w-[90%] md:w-[90%] mx-auto text-xs">
                 
               <tbody>
                <tr class="border-primary border w-[100%]">

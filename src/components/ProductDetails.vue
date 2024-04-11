@@ -101,7 +101,7 @@
         <!-- Slider controls -->
         <button
           type="button"
-          class="absolute z-0 lg:left-[-2%] custom-sm:left-[-7%] md:left-[-3%] top-[-13%] start-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          class="absolute z-0 lg:left-[-2%] cs:left-[-7%] md:left-[-3%] top-[-13%] start-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-prev
         >
           <span
@@ -127,7 +127,7 @@
         </button>
         <button
           type="button"
-          class="absolute lg:right-[-2%] custom-sm:right-[-7%] md:right-[-3%] top-[-13%] end-0 z-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          class="absolute lg:right-[-2%] cs:right-[-7%] md:right-[-3%] top-[-13%] end-0 z-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-next
         >
           <span
@@ -169,17 +169,17 @@
     class="font-poppins font-400 border-2 p-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) mb-5"
   >
     <div
-      class="font-bold custom-sm:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
+      class="font-bold cs:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
     >
       Property Description:
     </div>
     <!-- Location Fetching -->
     <div
-      class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:ml-5"
+      class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:ml-5"
     >
       Location:
       <!-- Location Needs to be Fetched -->
-      <span class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500">
+      <span class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500">
         <!-- {{ property.property_location }} -->
         {{ local_area }}
       </span>
@@ -188,13 +188,13 @@
     <div class="">
       <!-- Description Fetching -->
       <div
-        class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify"
+        class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify"
       >
         Description:
         <!-- Description Needs to be Fetched -->
 
         <span
-          class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+          class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
         >
           <!-- {{ property.property_description }} -->
           {{ description }}
@@ -207,7 +207,7 @@
     class="md:font-poppins border-2 p-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) mb-5 h-[360px]"
   >
     <div
-      class="font-bold custom-sm:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
+      class="font-bold cs:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
     >
       Property Description:
     </div>
@@ -215,13 +215,13 @@
       <div class="flex">
         <div class="w-[95%] mx-auto flex flex-wrap items-center justify-center">
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2">
               <!-- Address Needs to be Fetched -->
               Address:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.property_city }} -->
 
@@ -230,20 +230,20 @@
             </div>
 
             <span
-              class="lg:text-md md:text-md font-400 custom-sm:text-sm sm:text-sm"
+              class="lg:text-md md:text-md font-400 cs:text-sm sm:text-sm"
             >
             </span>
           </div>
           <!-- City needs to be Fetched Here -->
 
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2">
               <!-- City Needs to be Fetched -->
               City:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.property_city }} -->
 
@@ -252,20 +252,20 @@
             </div>
 
             <span
-              class="lg:text-md md:text-md font-400 custom-sm:text-sm sm:text-sm"
+              class="lg:text-md md:text-md font-400 cs:text-sm sm:text-sm"
             >
             </span>
           </div>
 
           <!-- State and Country Needs to be Fetched Here -->
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2">
               <!-- State and Country Needs to be Fetched -->
               State and Country:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.property_city }} -->
 
@@ -274,19 +274,19 @@
             </div>
 
             <span
-              class="lg:text-md md:text-md font-400 custom-sm:text-sm sm:text-sm"
+              class="lg:text-md md:text-md font-400 cs:text-sm sm:text-sm"
             >
             </span>
           </div>
           <!-- Zip Needs to be Fetched Here -->
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2">
               <!-- Zip Code Needs to be Fetched -->
               Zip Code:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.property_city }} -->
 
@@ -295,19 +295,19 @@
             </div>
 
             <span
-              class="lg:text-md md:text-md font-400 custom-sm:text-sm sm:text-sm"
+              class="lg:text-md md:text-md font-400 cs:text-sm sm:text-sm"
             >
             </span>
           </div>
           <!-- Neighborhood Needs to be Fetched Here -->
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2">
               <!-- Neighborhood Needs to be Fetched -->
               Neighborhood:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.property_city }} -->
 
@@ -316,7 +316,7 @@
             </div>
 
             <span
-              class="lg:text-md md:text-md font-400 custom-sm:text-sm sm:text-sm"
+              class="lg:text-md md:text-md font-400 cs:text-sm sm:text-sm"
             >
             </span>
           </div>
@@ -329,7 +329,7 @@
     class="md:font-poppins border-2 p-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) mb-5 h-[370px]"
   >
     <div
-      class="font-bold custom-sm:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
+      class="font-bold cs:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
     >
       Details:
     </div>
@@ -337,13 +337,13 @@
       <div class="flex">
         <div class="w-[95%] mx-auto flex flex-wrap items-center justify-center">
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2 flex flex-row gap-3 items-center">
               <!-- Bedroom Count Needs to be Fetched -->
               Bedrooms:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.bedroom }} -->
 
@@ -360,13 +360,13 @@
           <!-- City needs to be Fetched Here -->
 
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2 flex flex-row gap-3 items-center">
               <!-- Bathroom Count Needs to be Fetched -->
               Bathroom:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.bathroom}} -->
 
@@ -383,13 +383,13 @@
 
           <!-- Land Area Needs to be Fetched Here -->
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2 flex flex-row gap-3 items-center">
               <!-- Land Area Needs to be Fetched -->
               Land Area:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.andarea }} -->
 
@@ -399,13 +399,13 @@
           </div>
           <!-- Zip Needs to be Fetched Here -->
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2 flex flex-row gap-3 items-center">
               <!-- Bedroom Count Needs to be Fetched -->
               Parking Space:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.bedroom }} -->
 
@@ -415,13 +415,13 @@
           </div>
           <!-- Neighborhood Needs to be Fetched Here -->
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2 flex flex-row gap-3 items-center">
               <!-- Bedroom Count Needs to be Fetched -->
               Built In:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.bedroom }} -->
 
@@ -430,13 +430,13 @@
             </div>
           </div>
           <div
-            class="font-poppins font-bold lg:text-md md:text-md custom-sm:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
+            class="font-poppins font-bold lg:text-md md:text-md cs:text-sm sm:text-xs lg:mx-5 my-5 text-justify border-2 lg:w-[40%] lg:h-[25%] flex items-center"
           >
             <div class="ml-2 flex flex-row gap-3 items-center">
               <!-- Bedroom Count Needs to be Fetched -->
               Property Status:
               <span
-                class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs font-500 text-justify"
+                class="lg:text-md md:text-md cs:text-sm sm:text-xs font-500 text-justify"
               >
                 <!-- {{ property.bedroom }} -->
 
@@ -453,7 +453,7 @@
     class="md:font-poppins border-2 p-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) mb-5 h-[360px]"
   >
     <div
-      class="font-bold custom-sm:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
+      class="font-bold cs:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
     >
       Amenities:
     </div>
@@ -461,7 +461,7 @@
       <div class="flex">
         <div class="w-[95%] mx-auto flex flex-wrap items-center justify-center">
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="attic != 0"
           >
             <mdicon
@@ -474,7 +474,7 @@
           </div>
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="balcony != 0"
           >
             <mdicon
@@ -488,7 +488,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="deck != 0"
           >
             <mdicon
@@ -502,7 +502,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="fenced_yard != 0"
           >
             <mdicon
@@ -516,7 +516,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="frontyard != 0"
           >
             <mdicon
@@ -530,7 +530,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="gasheat != 0"
           >
             <mdicon
@@ -544,7 +544,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="gym != 0"
           >
             <mdicon
@@ -558,7 +558,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="lake_view != 0"
           >
             <mdicon
@@ -572,7 +572,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="pond != 0"
           >
             <mdicon
@@ -586,7 +586,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="pool != 0"
           >
             <mdicon
@@ -600,7 +600,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="recreation != 0"
           >
             <mdicon
@@ -614,7 +614,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="sprinklers != 0"
           >
             <mdicon
@@ -628,7 +628,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="storage != 0"
           >
             <mdicon
@@ -642,7 +642,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="washer != 0"
           >
             <mdicon
@@ -656,7 +656,7 @@
           <!-- ----- -->
           <!-- ----- -->
           <div
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[33.3%] my-[5%]"
             v-if="wine_cellar != 0"
           >
             <mdicon
@@ -677,7 +677,7 @@
     class="md:font-poppins border-2 p-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) mb-5 h-[360px]"
   >
     <div
-      class="font-bold custom-sm:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
+      class="font-bold cs:my-[3%] sm:my-[3%] lg:ml-5 border-b-2 border-dashed font-poppins"
     >
       Nearest Places:
     </div>
@@ -687,7 +687,7 @@
           <!-- ----- -->
           <div
             v-if="airport != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -704,7 +704,7 @@
           <!-- ----- -->
           <div
             v-if="bus_stand != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -720,7 +720,7 @@
           <!-- ----- -->
           <div
             v-if="hospital != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -736,7 +736,7 @@
           <!-- ----- -->
           <div
             v-if="patroltank != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -752,7 +752,7 @@
           <!-- ----- -->
           <div
             v-if="railway != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -768,7 +768,7 @@
           <!-- ----- -->
           <div
             v-if="shopping != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -784,7 +784,7 @@
           <!-- ----- -->
           <div
             v-if="universities != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 
@@ -801,7 +801,7 @@
 
           <div
             v-if="others != 'undefined'"
-            class="lg:text-md md:text-md custom-sm:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
+            class="lg:text-md md:text-md cs:text-sm sm:text-xs text-justify flex gap-2 justify-center items-center font-semibold w-[50%] my-[5%]"
           >
             <!-- {{ property.amenities-logo }} -->
 

@@ -1,23 +1,23 @@
 <template>
   <div
-    class="lg:block custom-sm:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] h-[100%] sticky top-0 bg-[#e9d8c5]"
+    class="lg:block cs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[80%] h-[100%] sticky top-0 bg-[#e9d8c5]"
   >
     <div class="flex flex-row row-span-2">
       <div
-        class="bg-[#e9d8c5] custom-sm:w-[90%] custom-sm:mb-[10%] lg:w-[80%] mx-auto my-5"
+        class="bg-[#e9d8c5] cs:w-[90%] cs:mb-[10%] lg:w-[80%] mx-auto my-5"
       >
         <div
           class="flex md:w-[100%] lg:w-[80%] mt-10 bg-gray-100 rounded-lg items-center justify-center mx-auto my-auto border-2 border-primary text-primary font-500 drop-shadow-lg"
         >
           <div
-            class="text-center lg:w-full custom-sm:w-[90%] my-auto lg:mx-auto mb-10"
+            class="text-center lg:w-full cs:w-[90%] my-auto lg:mx-auto mb-10"
           >
-            <div class="custom-sm:text-md my-5 mx-5 font-bold">
+            <div class="cs:text-md my-5 mx-5 font-bold">
               Fill out the form below to
               <span class="text-orange-500"> Edit Profile</span>
             </div>
             <div
-              class="border-b-2 border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold custom-sm:mt-[15%] custom-sm:text-sm"
+              class="border-b-2 border-dashed border-orange-500 flex justify-start items-start w-[85%] mx-auto font-bold cs:mt-[15%] cs:text-sm"
             >
               Agent's Data
             </div>

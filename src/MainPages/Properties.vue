@@ -1,13 +1,13 @@
 <template>
   <div class="flex text-[#2a2d57] mb-2">
     <div
-      class="flex md:w-[16%] pl-3 ml-3 font-poppins font-bold md:text-md lg:text-lg custom-sm:hidden sm:hidden md:hidden lg:block"
+      class="flex md:w-[16%] pl-3 ml-3 font-poppins font-bold md:text-md lg:text-lg cs:hidden sm:hidden md:hidden lg:block"
     >
       Search Filter
     </div>
 
     <div
-      class="flex w-[84%] text-lg pl-5 font-poppins font-bold md:text-md lg:text-lg custom-sm:text-hidden sm:text-hidden custom-sm:mt-[8%]"
+      class="flex w-[84%] text-lg pl-5 font-poppins font-bold md:text-md lg:text-lg cs:text-hidden sm:text-hidden cs:mt-[8%]"
     >
       Properties <BuildingLibraryIcon class="h-[26px] w-[26px] ml-1" />
     </div>
@@ -16,7 +16,7 @@
     <div class="flex">
       <!-- Accordion -->
       <div
-        class="md:hidden sm:hidden custom-sm:hidden xl:block lg:block lg:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
+        class="md:hidden sm:hidden cs:hidden xl:block lg:block lg:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
       >
         <Accordion
           title="Property Type"
@@ -87,10 +87,10 @@
       </div>
       <!-- Latest Sale -->
       <div
-        class="text-yellow flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] custom-sm:gap-3 custom-sm:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-center custom-sm:my-6"
+        class="text-yellow flex flex-wrap mt-2 h-full md:mx-auto md:w-[100%] lg:w-[84%] cs:gap-3 cs:mx-auto gap-y-9 md:gap-y-9 md:gap-5 justify-center cs:my-6"
       >
         <div
-          class="flex justify-center items-center custom-sm:my-5 custom-sm:w-[20%]"
+          class="flex justify-center items-center cs:my-5 cs:w-[20%]"
         >
           <Pagination
             :postCount="postCount"

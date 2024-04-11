@@ -75,3 +75,18 @@ body {
     zoom: 125% !important;
   }
 } */
+.float-anim {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

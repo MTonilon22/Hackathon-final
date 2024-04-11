@@ -3,7 +3,7 @@
     <!-- Property Name -->
 
     <div
-      class="custom-sm:w-[90%] mx-auto border-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) md:mb-[8%] lg:mb-[5%]"
+      class="cs:w-[90%] mx-auto border-2 shadow-xl rounded-md shadow-[0_4px_4px_0px_rgba(0,0,0,0.70) md:mb-[8%] lg:mb-[5%]"
     >
       <div
         class="text-center my-5 font-poppins font-bold md:text-md lg:text-2xl md:mt-[3%] md:mx-[3%]"

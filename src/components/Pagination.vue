@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-center justify-center lg:gap-4 md:gap-4 custom-sm:gap-0 custom-sm:ml-[-4%] custom-sm:w-[90%]"
+    class="flex items-center justify-center lg:gap-4 md:gap-4 cs:gap-0 cs:ml-[-4%] cs:w-[90%]"
   >
     <button
       :disabled="currentPage == 1"
-      class="flex custom-sm:active:w-[80%] custom-sm:text-xs items-center gap-2 lg:px-6 md:px-6 custom-sm:px-4 py-3 text-sm font-bold text-center text-orange-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-orange-100 active:bg-orange-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      class="flex cs:active:w-[80%] cs:text-xs items-center gap-2 lg:px-6 md:px-6 cs:px-4 py-3 text-sm font-bold text-center text-orange-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-orange-100 active:bg-orange-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button"
       @click="previous()"
     >
@@ -32,7 +32,7 @@
         :key="index"
         :i="page.i"
         :class="{
-          'relative h-10 max-h-[40px] w-10 max-w-[40px] custom-sm:w-[40%] select-none rounded-lg bg-orange-500 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-orange-100 transition-all hover:shadow-lg hover:shadow-orange-200 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none':
+          'relative h-10 max-h-[40px] w-10 max-w-[40px] cs:w-[40%] select-none rounded-lg bg-orange-500 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-orange-100 transition-all hover:shadow-lg hover:shadow-orange-200 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none':
             page.i === currentPage,
           'relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-lg text-center align-middle text-sm font-bold uppercase text-gray-900 transition-all hover:bg-orange-100 active:bg-orange-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none':
             page.i !== currentPage,
@@ -48,7 +48,7 @@
     </div>
     <button
       :disabled="currentPage === totalPage"
-      class="flex custom-sm:text-xs items-center gap-2 px-6 py-3 text-sm font-bold text-center text-orange-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-orange-100 active:bg-orange-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      class="flex cs:text-xs items-center gap-2 px-6 py-3 text-sm font-bold text-center text-orange-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-orange-100 active:bg-orange-200 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button"
       @click="next()"
     >
