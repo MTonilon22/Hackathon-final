@@ -12,31 +12,26 @@
       <h1
         class="font-semibold lg:text-2xl md:text-2xl sm:text-lg cs:text-xl text-center sm:w-[90%] lg:w-[90%] md:w-[90%] cs:w-[90%] text-ternary"
       >
-        PointQuest:
+        JobQuest:
       </h1>
       <p
-        class="lg:w-[45%] md:w-[80%] sm:w-[80%] cs:text-justify cs:justify-start cs:flex cs:w-[95%] lg:text-md text-secondary md:text-lg sm:text-md cs:text-sm font-normal text-center cs:tracking-wider sm:tracking-widest md:tracking-widest lg:tracking-wider"
+        class="lg:w-[45%] md:w-[80%] sm:w-[80%] cs:text-justify cs:justify-start cs:flex cs:w-[95%] lg:text-md text-[#2a2d57] md:text-lg sm:text-md cs:text-sm font-normal text-center cs:tracking-wider sm:tracking-widest md:tracking-widest lg:tracking-wider"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-        consequatur error odit dicta vero quae id recusandae, doloremque aliquid
-        debitis doloribus impedit libero veritatis vel asperiores quis corrupti
-        dolores quibusdam autem odio? Repellat, placeat maiores! Ratione nam
-        nesciunt, saepe exercitationem, voluptatibus aspernatur inventore
-        molestias atque minus dolores sequi, voluptatem voluptate?
+      Embarking on the journey of finding employment can be daunting, especially for those currently facing unemployment. "Job Quest" offers a comprehensive roadmap tailored to guide individuals through every stage of the job search process, empowering them to navigate the challenges and uncertainties with confidence.
       </p>
       <!-- Open the modal using ID.showModal() method -->
 
       <p
-        class="lg:text-md text-secondary font-normal lg:tracking-widest md:tracking-widest sm:tracking-wider cs:tracking-wide text-center md:text-lg cs:text-sm sm:text-md cs:w-[80%]"
+        class="lg:text-md text-[#2a2d57] font-normal lg:tracking-widest md:tracking-widest sm:tracking-wider cs:tracking-wide text-center md:text-lg cs:text-sm sm:text-md cs:w-[80%]"
       >
         This website is developed and managed by
-        <span class="font-semibold text-ternary"> Loreng Dolores </span>
+        <span class="font-bold text-[#2a2d57]"> HebHavi </span>
       </p>
     </div>
     <div class="flex items-center justify-center gap-10 mt-10">
       <router-link to="/register">
         <button
-          class="w-[100%] btn transition duration-300 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
+          class="w-[100%]  transition duration-300 text-p font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center text-white bg-[#2a2d57]"
         >
           Register
         </button>
@@ -44,7 +39,7 @@
 
       <router-link to="/login">
         <button
-          class="w-[100%] btn transition duration-300 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-8 py-2.5 text-center bg-ternary"
+          class="w-[100%] transition duration-300 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-8 py-2.5 text-center text-white bg-[#2a2d57]"
         >
           Login
         </button>

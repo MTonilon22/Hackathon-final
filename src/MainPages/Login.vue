@@ -11,19 +11,19 @@
             class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
           >
             <div
-              class="w-full rounded-2xl shadow dark:border md:mt-0 sm:max-w-md xl:p-0 bg-primary"
+              class="w-full rounded-2xl shadow dark:border md:mt-0 sm:max-w-md xl:p-0 bg-[#2a2d57]"
             >
               <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1
-                  class="text-lg font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-secondary mb-10"
+                  class="text-lg font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white mb-10"
                 >
-                  <span class="text-ternary tracking-wide">Login Account</span>
+                  <span class="text-white tracking-wide">Login Account</span>
                 </h1>
                 <div class="space-y-4 md:space-y-6" action="#">
                   <div>
                     <label
                       for="email"
-                      class="block mb-2 text-sm font-medium text-secondary"
+                      class="block mb-2 text-sm font-medium text-white"
                       >Username</label
                     >
                     <input
@@ -39,7 +39,7 @@
                   <div>
                     <label
                       for="password"
-                      class="block mb-2 text-sm font-medium text-secondary"
+                      class="block mb-2 text-sm font-medium text-white"
                       >Password</label
                     >
                     <input
@@ -64,29 +64,29 @@
                         />
                       </div>
                       <div class="ml-3 text-sm">
-                        <label for="remember" class="text-secondary"
+                        <label for="remember" class="text-white"
                           >Remember me</label
                         >
                       </div>
                       
                     </div>
-                    <a href="#" class="text-sm text-ternary hover:underline"
+                    <a href="#" class="text-sm text-white hover:underline"
                       >Forgot password?</a
                     >
                   </div>
                     <button 
                       @click="login"
                       type="submit"
-                      class="w-[30%] btn transition duration-300 mt-8 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
+                      class="w-[30%] transition duration-300 mt-8 text-p text-[#2a2d57] font-bold tracking-wide bg-white focus:ring-primary-300 rounded-full text-sm px-5 py-2.5 text-center bg-ternary"
                     >
                       Sign in
                     </button>
   
-                  <p class="text-sm font-light text-secondary">
+                  <p class="text-sm font-light text-white">
                     Don’t have an account yet?
                     <router-link to="/register">
                       <a
-                        class="font-medium text-ternary hover:underline dark:text-primary-500 cursor-pointer"
+                        class="font-medium text-white hover:underline dark:text-primary-500 cursor-pointer"
                         >Register</a
                       >
                     </router-link>

@@ -1,35 +1,39 @@
 <template>
-  <p>first_name</p>
-  <input v-model="first_name" type="text">
-  <p>middle_name</p>
-  <input v-model="middle_name" type="text">
-  <p>last_name</p>
-  <input v-model="last_name" type="text">
-  <p>email</p>
-  <input v-model="email" type="text">
-  <p>birthdate</p>
-  <input v-model="birthdate" type="date">
-  <p>gender</p>
-  <input v-model="gender" type="text">
-  <p>school_grad</p>
-  <input v-model="school_grad" type="text">
-  <p>experience</p>
-  <input v-model="experience" type="text">
-  <p>username</p>
-  <input v-model="username" type="text">
-  <p>password</p>
-  <input v-model="password" type="text">
-  <p>skills</p>
-  <input v-model="skills" type="text">
-  <p>objective</p>
-  <input v-model="objective" type="text">
-  <p>position</p>
-  <input v-model="position" type="text">
-  <p>achievements</p>
-  <input v-model="achievements" type="text">
-  <p>picture</p>
+  <div class="flex flex-col items-center justify-center "> <p class="text-md font-bold tracking-wider">First Name</p>
+  <div class="">  <input class="rounded-lg border-[#2a2d57] " v-model="first_name" type="text">
+  
+  <div> <p class="text-md font-bold tracking-wider">Middle Name</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="middle_name" type="text"></div> 
+  <div><p class="text-md font-bold tracking-wider">Last Name</p>
+  <div><input class="rounded-lg border-[#2a2d57] " v-model="last_name" type="text"></div>
+  <div><p class="text-md font-bold tracking-wider">Email</p></div>
+  <input class="rounded-lg border-[#2a2d57] " v-model="email" type="text"></div></div>
+  
+  <p class="text-md font-bold tracking-wider">Birth Date</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="birthdate" type="date">
+  <p class="text-md font-bold tracking-wider">Gender</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="gender" type="text">
+  <p class="text-md font-bold tracking-wider">School Graduated</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="school_grad" type="text">
+  <p class="text-md font-bold tracking-wider">Experience</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="experience" type="text">
+  <p class="text-md font-bold tracking-wider">Username</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="username" type="text">
+  <p class="text-md font-bold tracking-wider">Password</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="password" type="text">
+  <p class="text-md font-bold tracking-wider">Skills</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="skills" type="text">
+  <p class="text-md font-bold tracking-wider">Objective</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="objective" type="text">
+  <p class="text-md font-bold tracking-wider">Position</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="position" type="text">
+  <p class="text-md font-bold tracking-wider">Achievements</p>
+  <input class="rounded-lg border-[#2a2d57] " v-model="achievements" type="text">
+  <p class="text-md font-bold tracking-wider">Picture</p>
   <input type="file" @change="handleFileImage">
-  <button @click="register">SUBMIT</button>
+  <div class="my-5"><button class="px-5 py-2 rounded-lg bg-[#2a2d57] text-white my-2" @click="register">SUBMIT</button></div>
+  </div>
+  
   </template>
   <script setup>
   
@@ -90,3 +94,4 @@
   };
   
   </script>
+
