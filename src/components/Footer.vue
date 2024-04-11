@@ -17,7 +17,7 @@
           /></router-link>
         </div>
         <div
-          class="text-center underline custom-sm:text-xs sm:text-sm md:text-md lg:text-lg italic cursor-pointer hover:text-[#E67E23]"
+          class="text-center underline custom-sm:text-xs sm:text-sm md:text-md lg:text-lg italic cursor-pointer hover:text-[#2a2d57]"
         >
           <router-link class="" to="/about"
             >" Begin Your Story With Us "</router-link
@@ -38,22 +38,22 @@
         class="custom-sm:mt-[-9px] flex justify-center items-center flex-col text-center text-base"
       >
         <div
-          class="cursor-pointer mb-2 hover:text-[#E67E23] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
+          class="cursor-pointer mb-2 hover:text-[#2a2d57] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
         >
           Policy
         </div>
         <div
-          class="cursor-pointer mb-2 hover:text-[#E67E23] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
+          class="cursor-pointer mb-2 hover:text-[#2a2d57] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
         >
           Team
         </div>
         <div
-          class="cursor-pointer mb-2 hover:text-[#E67E23] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
+          class="cursor-pointer mb-2 hover:text-[#2a2d57] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
         >
           FAQs
         </div>
         <div
-          class="cursor-pointer mb-2 hover:text-[#E67E23] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
+          class="cursor-pointer mb-2 hover:text-[#2a2d57] text-center custom-sm:text-sm sm:text-sm md:text-base lg:text-base"
         >
           Terms and Conditions
         </div>

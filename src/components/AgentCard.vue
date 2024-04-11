@@ -43,7 +43,7 @@
       </p>
       <div class="flex w-1/2 mt-4 md:mt-6">
         <div
-          class="bg-[#E67E23] h-9 w-full rounded-md text-white text-center font-normal text-md hover:bg-white hover:text-[#E67E23] hover:border-[#E67E23] border-[#E67E23] border-2 transition duration-300"
+          class="bg-[#2a2d57] h-9 w-full rounded-md text-white text-center font-normal text-md hover:bg-white hover:text-[#2a2d57] hover:border-[#2a2d57] border-[#2a2d57] border-2 transition duration-300"
         >
           <button @click="redirect" class="text-center h-9 font-medium">
             View Profile

@@ -1094,7 +1094,7 @@
                     <div class="flex justify-start mt-10">
                       <button
                         @click="submitProperty()"
-                        class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-[#E67E23] rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600 mr-4"
+                        class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-[#2a2d57] rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600 mr-4"
                         id="saveAgent"
                       >
                         Submit

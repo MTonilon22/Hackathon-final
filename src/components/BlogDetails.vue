@@ -8,7 +8,7 @@
           class="custom-sm:mb-5 custom-sm:mx-auto custom-sm:w-[300px] sm:mb-5 sm:w-[330px] md:w-[100%] lg:w-[100%] mx-auto lg:ml-[-9%]"
         >
           <div class="iframe-container">
-            <div><img src="../assets/gal3.jpg" alt="" /></div>
+            <div><img src="../assets/soft-eng.png" alt="" /></div>
           </div>
         </div>
 
@@ -84,12 +84,12 @@
               Step View 5
             </div>
             <div
-              class="flex lg:w-full text-[#E67E23] lg:ml-3 lg:mb-2 md:ml-1 md:mb-1"
+              class="flex lg:w-full text-[#2a2d57] lg:ml-3 lg:mb-2 md:ml-1 md:mb-1"
             >
               <div class="flex text-lg font-semibold pl-3 custom-sm:my-4">
                 Comments:
                 <ChatBubbleLeftIcon
-                  class="h-[26px] w-[26px] ml-1 text-[#E67E23]"
+                  class="h-[26px] w-[26px] ml-1 text-[#2a2d57]"
                 />
               </div>
             </div>
@@ -107,7 +107,7 @@
                   href=""
                   class="flex items-center justify-center my-auto ml-1.5"
                   ><PaperAirplaneIcon
-                    class="ml-1 mr-1 w-[25px] h-[25px] text-[#E67E23] hover:scale-110"
+                    class="ml-1 mr-1 w-[25px] h-[25px] text-[#2a2d57] hover:scale-110"
                 /></a>
               </div>
             </div>

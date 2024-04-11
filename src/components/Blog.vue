@@ -8,7 +8,7 @@
           class="md:w-[100%] md:h-[100%] custom-sm:w-[100%] custom-sm:h-[100%] lg:w-[40%] lg:h-[100%] m-[-3px] custom-sm:mt-[1%]"
         >
           <img
-            :src="thumbnailUrl"
+            src="../assets/soft-eng.png"
             alt="YouTube Thumbnail"
             class="rounded-lg md:h-[70px] md:w-[100px] custom-sm:h-[80px] custom-sm:w-[105px] object-cover lg:h-[80px] lg:w-[300px] md:mt-1 mx-auto"
           />
@@ -23,10 +23,7 @@
               <div class="w-[70%]">Software Developer:</div>
             </div>
 
-            <div>
-              Lorem ipsum dolor sit, amet consectetur ascasc klaskc sjacaskc
-              jsacoan
-            </div>
+            <div>Seeking passionate Software Developer to join team.</div>
           </div>
         </div>
       </a>

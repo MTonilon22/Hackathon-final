@@ -7,9 +7,9 @@
           <!-- Chevron icon based on accordion state -->
           <ChevronUpIcon
             v-if="isActive"
-            class="h-[15px] w-[15px] text-[#E67E23]"
+            class="h-[15px] w-[15px] text-[#2a2d57]"
           />
-          <ChevronDownIcon v-else class="h-[15px] w-[15px] text-[#E67E23]" />
+          <ChevronDownIcon v-else class="h-[15px] w-[15px] text-[#2a2d57]" />
         </div>
         <div
           class="flex items-center font-poppins font-bold custom-sm:text-white sm:text-white md:text-white lg:text-orange-500 w-[88%]"
@@ -18,7 +18,7 @@
           {{ title }}
         </div>
       </div>
-      <hr class="border-[#E67E23]" />
+      <hr class="border-[#2a2d57]" />
       <!-- Accordion content -->
       <div
         v-if="isActive"

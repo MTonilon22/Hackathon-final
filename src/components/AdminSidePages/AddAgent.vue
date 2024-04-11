@@ -56,10 +56,11 @@
               class="hover:text-white"
             />
             <button
-            @click="propertyListing"
+              @click="propertyListing"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Property Listing</button
             >
+              Property Listing
+            </button>
           </li>
           <li class="flex">
             <mdicon
@@ -69,10 +70,11 @@
               class="hover:text-white"
             />
             <button
-            @click="propertyTable"
+              @click="propertyTable"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Property Table</button
             >
+              Property Table
+            </button>
           </li>
           <li class="flex">
             <mdicon
@@ -82,10 +84,11 @@
               class="hover:text-white"
             />
             <button
-            @click="addAgent"
+              @click="addAgent"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Add Agent</button
             >
+              Add Agent
+            </button>
           </li>
           <li class="flex">
             <mdicon
@@ -95,10 +98,11 @@
               class="hover:text-white"
             />
             <button
-            @click="agentTable"
+              @click="agentTable"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Agent Table</button
             >
+              Agent Table
+            </button>
           </li>
           <li class="flex">
             <mdicon
@@ -108,10 +112,11 @@
               class="hover:text-white"
             />
             <button
-            @click="blogListing"
+              @click="blogListing"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Blog Listing</button
             >
+              Blog Listing
+            </button>
           </li>
           <li class="flex">
             <mdicon
@@ -121,10 +126,11 @@
               class="hover:text-white"
             />
             <button
-            @click="blogTable"
+              @click="blogTable"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Blog Table</button
             >
+              Blog Table
+            </button>
           </li>
           <li class="flex">
             <mdicon
@@ -134,10 +140,11 @@
               class="hover:text-white"
             />
             <button
-            @click="logout"
+              @click="logout"
               class="hover-underline text-white font-poppins font-bold custom-sm:mt-1 sm:mt-1 sm:ml-4 custom-sm:ml-4"
-              >Logout Account</button
             >
+              Logout Account
+            </button>
           </li>
         </ul>
       </aside>
@@ -166,7 +173,7 @@
                         >Agent Name:</label
                       >
                       <input
-                      v-model="agent_name"
+                        v-model="agent_name"
                         id="agentname"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -180,7 +187,7 @@
                         >Description:</label
                       >
                       <textarea
-                      v-model="description"
+                        v-model="description"
                         id="agentdesc"
                         type="textarea"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -194,7 +201,7 @@
                         >Position</label
                       >
                       <input
-                      v-model="position"
+                        v-model="position"
                         id="agentpos"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -208,7 +215,7 @@
                         >Email</label
                       >
                       <input
-                      v-model="email"
+                        v-model="email"
                         id="agentemail"
                         type="email"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -222,7 +229,7 @@
                         >Address</label
                       >
                       <input
-                      v-model="address"
+                        v-model="address"
                         id="agentaddress"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -236,7 +243,7 @@
                         >Contact</label
                       >
                       <input
-                      v-model="contact_number"
+                        v-model="contact_number"
                         id="agentcontact"
                         type="number"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -250,7 +257,7 @@
                         >City</label
                       >
                       <input
-                      v-model="city"
+                        v-model="city"
                         id="agentcity"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -264,7 +271,7 @@
                         >Country</label
                       >
                       <input
-                      v-model="country"
+                        v-model="country"
                         id="agentcountry"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -278,7 +285,7 @@
                         >Region</label
                       >
                       <input
-                      v-model="region"
+                        v-model="region"
                         id="agentregion"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -292,7 +299,7 @@
                         >Username</label
                       >
                       <input
-                      v-model="username"
+                        v-model="username"
                         id="agentusername"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -306,7 +313,7 @@
                         >Password</label
                       >
                       <input
-                      v-model="password"
+                        v-model="password"
                         id="agentpassword"
                         type="password"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -320,7 +327,7 @@
                         >Facebook</label
                       >
                       <input
-                      v-model="facebook"
+                        v-model="facebook"
                         id="agentfb"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -332,7 +339,7 @@
                         >X(Twitter)</label
                       >
                       <input
-                      v-model="x"
+                        v-model="x"
                         id="agentx"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -346,7 +353,7 @@
                         >Instagram</label
                       >
                       <input
-                      v-model="instagram"
+                        v-model="instagram"
                         id="agentinsta"
                         type="text"
                         class="block w-full px-4 py-2 rounded-md text-gray-950 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 focus:outline-none"
@@ -401,7 +408,7 @@
                   <div class="flex justify-start items-start flex-col mt-6">
                     <button
                       @click="submitAgent"
-                      class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-[#E67E23] rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600 mr-4"
+                      class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-[#2a2d57] rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600 mr-4"
                       id="saveAgent"
                     >
                       Save
@@ -414,11 +421,7 @@
         </div>
       </div>
     </div>
-
-
   </div>
-
-
 </template>
 
 <script setup>
@@ -427,15 +430,14 @@ import AuthChecker from "../AuthChecker.vue";
 import { ref } from "vue";
 import axios from "axios";
 defineProps({
-  propertyListing:Function,
-  propertyTable:Function,
-  addAgent:Function,
-  agentTable:Function,
-  blogListing:Function,
-  blogTable:Function,
-  logout:Function,
+  propertyListing: Function,
+  propertyTable: Function,
+  addAgent: Function,
+  agentTable: Function,
+  blogListing: Function,
+  blogTable: Function,
+  logout: Function,
 });
-
 
 const username = ref();
 const password = ref();
@@ -453,53 +455,40 @@ const facebook = ref();
 const x = ref();
 const instagram = ref();
 
-
-
-
-const submitAgent = async() => {
-  try{
+const submitAgent = async () => {
+  try {
     const formData = new FormData();
 
-    formData.append("username",username.value);
-    formData.append("password",password.value);
-    formData.append("profile_picture",image.value);
+    formData.append("username", username.value);
+    formData.append("password", password.value);
+    formData.append("profile_picture", image.value);
 
-    formData.append("agent_name",agent_name.value);
-    formData.append("description",description.value);
-    formData.append("position",position.value);
-    formData.append("email",email.value);
-    formData.append("address",address.value);
-    formData.append("contact_number",contact_number.value);
-    formData.append("city",city.value);
-    formData.append("country",country.value);
-    formData.append("region",region.value);
-    formData.append("facebook",facebook.value);
-    formData.append("x",x.value);
-    formData.append("instagram",instagram.value);
+    formData.append("agent_name", agent_name.value);
+    formData.append("description", description.value);
+    formData.append("position", position.value);
+    formData.append("email", email.value);
+    formData.append("address", address.value);
+    formData.append("contact_number", contact_number.value);
+    formData.append("city", city.value);
+    formData.append("country", country.value);
+    formData.append("region", region.value);
+    formData.append("facebook", facebook.value);
+    formData.append("x", x.value);
+    formData.append("instagram", instagram.value);
 
-    await axios.post("http://localhost:8080/addAgent",formData,{
+    await axios.post("http://localhost:8080/addAgent", formData, {
       headers: {
-        "Content-Type" : "multipart/form-data",
-        },
+        "Content-Type": "multipart/form-data",
+      },
     });
     alert("added!");
     window.location.reload();
-  }
-  catch(error){
-    if(!image.value){
-      
+  } catch (error) {
+    if (!image.value) {
     }
-    console.log("Error:",error);
+    console.log("Error:", error);
   }
-}
-
-
-
-
-
-
-
-
+};
 
 const handleFileImage = (event) => {
   const file = (event.target.files || [])[0];
@@ -514,8 +503,6 @@ const handleFileImage = (event) => {
     console.log("File uploaded:", file.name);
   }
 };
-
-
 
 const active = ref(0);
 const isSidebarVisible = ref(false);

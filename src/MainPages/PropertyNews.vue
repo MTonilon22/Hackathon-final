@@ -1,6 +1,6 @@
 <template>
   <div class="p-3">
-    <div class="flex text-[#E67E23] mb-2 md:">
+    <div class="flex text-[#2a2d57] mb-2 md:">
       <div
         class="flex w-[16%] text-lg pl-3 font-poppins font-bold md:text-md lg:text-lg custom-sm:hidden sm:hidden md:hidden lg:block"
       >

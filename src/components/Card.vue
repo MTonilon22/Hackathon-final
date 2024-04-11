@@ -6,7 +6,7 @@
       <img
         :src="img"
         alt="img"
-        class="w-48 h-48 border-4 border-[#E67E23] rounded-full object-cover relative z-10"
+        class="w-48 h-48 border-4 border-[#2a2d57] rounded-full object-cover relative z-10"
       />
     </div>
     <h2
@@ -14,7 +14,7 @@
     >
       {{ name }}
     </h2>
-    <span class="text-xl font-medium hover:text-[#E67E23]">{{ title }}</span>
+    <span class="text-xl font-medium hover:text-[#2a2d57]">{{ title }}</span>
     <p
       class="mt-4 lg:text-justify custom-sm:text-center sm:text-center text-[12px] font-poppins 2xl:text-xl line-clamp-3"
     >
@@ -23,7 +23,7 @@
 
     <div class="flex justify-center items-center mt-5 text-white">
       <button
-        class="bg-[#E67E23] lg:h-12 lg:w-48 custom-sm:w-32 custom-sm:h-8 sm:w-32 sm:h-8 rounded-md text-white text-center font-semibold text-lg lg:text-xl xl:w-64 hover:bg-white hover:text-[#E67E23] hover:border-[#E67E23] border-[#E67E23] border-2 transition duration-300"
+        class="bg-[#2a2d57] lg:h-12 lg:w-48 custom-sm:w-32 custom-sm:h-8 sm:w-32 sm:h-8 rounded-md text-white text-center font-semibold text-lg lg:text-xl xl:w-64 hover:bg-white hover:text-[#2a2d57] hover:border-[#2a2d57] border-[#2a2d57] border-2 transition duration-300"
       >
         View Profile
       </button>

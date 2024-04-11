@@ -19,7 +19,7 @@
         class="my-3 text-center font-poppins font-bold md:text-md lg:text-2xl lg:pb-[3%] md:pb-[3%]"
       >
         Price:
-        <span class="text-[#E67E23] font-bold md:text-md lg:text-2xl ml-3">
+        <span class="text-[#2a2d57] font-bold md:text-md lg:text-2xl ml-3">
           ₱
           {{
             property.property_price

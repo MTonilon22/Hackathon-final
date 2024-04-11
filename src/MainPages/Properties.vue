@@ -1,5 +1,5 @@
 <template>
-  <div class="flex text-[#E67E23] mb-2">
+  <div class="flex text-[#2a2d57] mb-2">
     <div
       class="flex md:w-[16%] pl-3 ml-3 font-poppins font-bold md:text-md lg:text-lg custom-sm:hidden sm:hidden md:hidden lg:block"
     >
@@ -70,7 +70,7 @@
         <button
           @click="filter"
           style="
-            background-color: #e67e23;
+            background-color: #2a2d57;
             color: white;
             padding: 10px 15px;
             border: none;

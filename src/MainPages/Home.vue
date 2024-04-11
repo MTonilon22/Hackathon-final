@@ -1,12 +1,12 @@
 <template>
-  <div class="flex text-[#E67E23] mb-2 mt-4">
+  <div class="flex text-[#2a2d57] mb-2 mt-4">
     <div
       class="flex w-[16%] text-lg pl-3 ml-3 font-poppins font-bold custom-sm:hidden sm:hidden md:hidden lg:block items-center justify-center my-auto"
     >
       Search Filter
     </div>
     <div class="flex w-[84%] text-lg pl-5 font-poppins font-bold ml-[9%] my-1">
-      Latest<NewspaperIcon class="h-[26px] w-[26px] ml-1" />
+      Job Listing<NewspaperIcon class="h-[26px] w-[26px] ml-1" />
     </div>
   </div>
   <div class="flex">
@@ -64,7 +64,7 @@
       <button
         @click="filter"
         style="
-          background-color: #e67e23;
+          background-color: #2a2d57;
           color: white;
           padding: 10px 15px;
           border: none;

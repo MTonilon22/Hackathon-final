@@ -1,10 +1,10 @@
 <template>
   <!-- Navigation Bar E67E23 -->
-  <div class="flex flex-row bg-[#E67E23]">
+  <div class="flex flex-row bg-[#2a2d57]">
     <div class="custom-sm:hidden sm:hidden md:hidden lg:block sticky">
-      <div class="flex lg:h-14 sticky top-11 bg-[#E67E23]">
+      <div class="flex lg:h-14 sticky top-11 bg-[#2a2d57]">
         <div
-          class="flex w-[100%] justify-end items-center pr-3 ml-5 bg-[#E67E23]"
+          class="flex w-[100%] justify-end items-center pr-3 ml-5 bg-[#2a2d57]"
         >
           <UserIcon
             @click="toggleModal"
@@ -17,7 +17,7 @@
     </LoginModal>
     <div class="flex w-[80%] justify-center items-center gap-1">
       <input
-        class="border-2 border-[#E67E23] rounded-full w-[550px] h-11 focus:outline-none hover:shadow-2xl pl-3"
+        class="border-2 border-[#2a2d57] rounded-full w-[550px] h-11 focus:outline-none hover:shadow-2xl pl-3"
         type="text"
         name=""
         id="search_bar"
@@ -34,7 +34,7 @@
       />
     </div>
     <div
-      class="bg-[#E67E23] custom-sm:sticky custom-sm:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10 pr-10"
+      class="bg-[#2a2d57] custom-sm:sticky custom-sm:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10 pr-10"
     >
       <div></div>
       <ul

@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation Bar E67E23 -->
   <div
-    class="bg-[#E67E23] custom-sm:sticky custom-sm:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10"
+    class="bg-[#2a2d57] custom-sm:sticky custom-sm:top-0 sticky top-0 h-14 text-[#fefefe] text-[18px] font-semibold p-2 pt-3 z-10"
   >
     <ul
       class="flex justify-end gap-6 hover: cursor-pointer custom-sm:hidden font-poppins font-bold"
@@ -37,7 +37,7 @@
       </div>
       <div class="flex w-[80%] justify-center items-center gap-1">
         <input
-          class="border-2 border-[#E67E23] rounded-full w-[550px] h-11 focus:outline-none hover:shadow-2xl pl-3"
+          class="border-2 border-[#2a2d57] rounded-full w-[550px] h-11 focus:outline-none hover:shadow-2xl pl-3"
           type="text"
           name=""
           id="search_bar"
@@ -49,16 +49,15 @@
         />
 
         <MagnifyingGlassIcon
-          class="h-11 w-11 text-[#E67E23] cursor-pointer hover:scale-[1.02]"
+          class="h-11 w-11 text-[#2a2d57] cursor-pointer hover:scale-[1.02]"
           @click="search"
         />
       </div>
       <div class="flex w-[10%] justify-end items-center pr-3">
-        <UserIcon class="w-10 h-10 text-[#E67E23] hover:scale-[1.02]" />
+        <UserIcon class="w-10 h-10 text-[#2a2d57] hover:scale-[1.02]" />
       </div>
     </div>
   </div>
-
 </template>
 
 <script lang="ts" setup>

@@ -1,6 +1,6 @@
 <template>
   <div class="p-3">
-    <div class="flex text-[#E67E23] font">
+    <div class="flex text-[#2a2d57] font">
       <div
         class="flex w-[16%] font-poppins font-bold text-lg pl-3 custom-sm:hidden sm:hidden md:hidden lg:block"
       >
@@ -151,7 +151,7 @@
       class="custom-sm:w-[90%] custom-sm: mx-auto md:mb-5 lg:mb-5 md:mt-10 lg:mt-10 md:mx-1 md:w-[90%] md:h-[50%] lg:mx-auto"
     >
       <div
-        class="custom-sm:-ml-3 sm:-ml-3 flex w-[16%] text-xl lg:ml-[5%] text-[#E67E23] font-poppins font-bold"
+        class="custom-sm:-ml-3 sm:-ml-3 flex w-[16%] text-xl lg:ml-[5%] text-[#2a2d57] font-poppins font-bold"
       >
         Location <MapIcon class="h-[26px] w-[26px] ml-1" />
       </div>
@@ -164,7 +164,7 @@
     </div>
     <div>
       <div
-        class="font-poppins font-bold lg:text-xl md:text-lg mt-10 lg:ml-[9%] lg:w-[16%] md:w-[50%] pl-3 text-[#E67E23] flex flex-row my-5"
+        class="font-poppins font-bold lg:text-xl md:text-lg mt-10 lg:ml-[9%] lg:w-[16%] md:w-[50%] pl-3 text-[#2a2d57] flex flex-row my-5"
       >
         Related Property
         <span><ChatBubbleLeftIcon class="h-[26px] w-[26px] ml-1" /></span>

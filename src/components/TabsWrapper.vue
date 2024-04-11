@@ -50,6 +50,6 @@ export default {
 a.active {
   background-color: white;
   border-radius: 10px;
-  color: #e67e23;
+  color: #2a2d57;
 }
 </style>

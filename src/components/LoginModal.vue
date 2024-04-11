@@ -23,7 +23,7 @@
                 class="absolute top-2 right-2 cursor-pointer text-gray-500 hover:text-gray-700 focus:outline-none"
                 @click="$emit('close-modal')"
               >
-                <XMarkIcon class="w-5 h-5 m-2 text-[#E67E23]" />
+                <XMarkIcon class="w-5 h-5 m-2 text-[#2a2d57]" />
                 <span class="sr-only">Close</span>
               </button>
             </div>
@@ -35,7 +35,7 @@
                     >Username</label
                   >
                   <input
-                  v-model="username"
+                    v-model="username"
                     type="text"
                     name="text"
                     id="username"
@@ -49,7 +49,7 @@
                     >Password</label
                   >
                   <input
-                  v-model="password"
+                    v-model="password"
                     type="password"
                     name="password"
                     id="password"
@@ -71,18 +71,16 @@
                     <label for="remember" class="ms-2 text-sm font-medium"
                       >Remember me</label
                     >
-                    
                   </div>
                   <a href="#" class="text-sm text-blue-700 hover:underline"
                     >Forgot Password?</a
                   >
-                  
                 </div>
                 <p class="text-bold text-coolGray-600">
                   {{ errorMessage }}
                 </p>
                 <button
-                  class="w-full text-white bg-[#E67E23] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-cente"
+                  class="w-full text-white bg-[#2a2d57] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-cente"
                   @click="login"
                 >
                   Login
@@ -98,8 +96,8 @@
 
 <script lang="ts" setup>
 import { XMarkIcon } from "@heroicons/vue/24/outline";
-import { ref , onMounted} from "vue";
-import { useRouter} from "vue-router"
+import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
 defineEmits(["close-modal"]);
 defineProps({
   modalActive: {
@@ -108,65 +106,42 @@ defineProps({
   },
 });
 
-onMounted(()=>{
-  
-});
-
+onMounted(() => {});
 
 const router = useRouter();
 
-
-
 const username = ref();
 const password = ref();
-const errorMessage= ref();
-
-
-
-
+const errorMessage = ref();
 
 const login = async () => {
-
-  try{
-    const response = await fetch ('http://localhost:8080/getUsers');
+  try {
+    const response = await fetch("http://localhost:8080/getUsers");
     const data = await response.json();
 
-    for(var i = 0 ; i < data.length ; i ++){
-      if(data[i].username==username.value){
-
-        if(data[i].password == password.value){
-
-          if(data[i].role=='admin')
-          {
-            localStorage.setItem('currentUser','admin');
-            localStorage.setItem('authCheck','true');
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].username == username.value) {
+        if (data[i].password == password.value) {
+          if (data[i].role == "admin") {
+            localStorage.setItem("currentUser", "admin");
+            localStorage.setItem("authCheck", "true");
             router.push("/adminNew");
-          }
-          else if(data[i].role =='agent'){
-            localStorage.setItem('currentUser','agent');
-            localStorage.setItem('authCheck','true');
+          } else if (data[i].role == "agent") {
+            localStorage.setItem("currentUser", "agent");
+            localStorage.setItem("authCheck", "true");
             router.push("/agentNew");
           }
-        }
-        else{
+        } else {
           errorMessage.value = "Wrong Credentials";
         }
-      }
-      else{
-        errorMessage.value = "Wrong Credentials"
+      } else {
+        errorMessage.value = "Wrong Credentials";
       }
     }
-
+  } catch (error) {
+    console.log("Error:", error);
   }
-  catch(error){
-    console.log("Error:" , error);
-  }
-}
-
-
-
-
-
+};
 </script>
 
 <style scoped>
