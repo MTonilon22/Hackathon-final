@@ -13,20 +13,20 @@
             class="rounded-lg md:h-[70px] md:w-[100px] custom-sm:h-[80px] custom-sm:w-[105px] object-cover lg:h-[80px] lg:w-[300px] md:mt-1 mx-auto"
           />
         </div>
-        <div class="lg:w-[60%] pl-2">
+        <div class="lg:w-[60%] p-2">
           <div
             class="lg:text-[11px] md:text-[9px] font-semibold lg:mt-[-4%] text-justify tracking-tight lg:ml-1 custom-sm:text-xs"
           >
             <!-- {{ description }} -->
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque at
-            esse maxime! Cumque alias, eos minus amet
-          </div>
-          <div
-            class="lg:text-xs md:text-[13px] text-start text-black font-bold mt-1 ml-1 custom-sm:text-xs custom-sm:ml-[-1%]"
-          >
-            <!-- {{ "By: " + name }} -->
+            <div class="font-semibold text-black flex">
+              <div class="w-[30%]">Azues</div>
+              <div class="w-[70%]">Software Developer:</div>
+            </div>
 
-            By: Cumque alias, eos
+            <div>
+              Lorem ipsum dolor sit, amet consectetur ascasc klaskc sjacaskc
+              jsacoan
+            </div>
           </div>
         </div>
       </a>

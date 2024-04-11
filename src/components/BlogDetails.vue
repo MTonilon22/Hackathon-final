@@ -8,64 +8,128 @@
           class="custom-sm:mb-5 custom-sm:mx-auto custom-sm:w-[300px] sm:mb-5 sm:w-[330px] md:w-[100%] lg:w-[100%] mx-auto lg:ml-[-9%]"
         >
           <div class="iframe-container">
-            <div v-html="iframe"></div>
+            <div><img src="../assets/gal3.jpg" alt="" /></div>
           </div>
         </div>
 
         <div class="flex-col w-[90%]">
           <div class="font-sans lg:ml-[-3%] md:ml-[-5%]">
-            <strong class="font-bold font-poppins lg:text-2xl lg:text-center">{{
-              title
-            }}</strong
+            <strong class="font-bold font-poppins lg:text-2xl lg:text-center"
+              >Software Developer</strong
             ><br /><br />
 
-            <strong class="font-bold font-poppins">Location:</strong>
-            {{ location }}<br /><br />
+            <strong class="font-bold font-poppins">Position Overview: </strong>
+            We are looking for a skilled Software Developer to join our team.
+            The ideal candidate is passionate about coding, problem-solving, and
+            staying updated with the latest technologies. In this role, you will
+            contribute to the development of software applications, participate
+            in code reviews, and collaborate with cross-functional teams to
+            deliver high-quality products.<br /><br />
 
-            <strong class="font-bold font-poppins">Developed By:</strong>
-            {{ developer }}<br /><br />
+            <strong class="font-bold font-poppins">Location: </strong>
+            IT Park Ceu CIty<br /><br />
 
-            <strong class="font-bold font-poppins">Details:</strong>
-            {{ details }}<br /><br />
+            <strong class="font-bold font-poppins">Salary</strong>
+            ₱15,000 - ₱25-000 / month<br /><br />
             <div class="whitespace-break-spaces font-poppins">
-              <strong>Description:</strong> {{ description }}<br /><br />
+              <strong>Skills Required</strong> Java, React,Vue, MYSQL<br /><br />
             </div>
 
-            <div class="whitespace-break-spaces font-poppins">
-              <strong>Amenities:</strong>
-              <div v-for="(amenity, index) in amenities" :key="index">
-                <div v-if="!amenity == ''">⭐{{ amenity }}</div>
+            <div class="flex justify-center">
+              <ul class="steps steps-vertical lg:steps-horizontal">
+                <li @click="currenTab = 0" class="step step-warning">
+                  Submit Requirement
+                </li>
+                <li @click="currenTab = 1" class="step">Primary Interview</li>
+                <li @click="currenTab = 2" class="step">Online Assesments</li>
+                <li @click="currenTab = 3" class="step">
+                  Technical Interviews
+                </li>
+                <li @click="currenTab = 4" class="step">Confirmation</li>
+              </ul>
+            </div>
+
+            <div
+              v-if="currenTab === 0"
+              class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
+            >
+              Step View 1
+            </div>
+
+            <div
+              v-if="currenTab === 1"
+              class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
+            >
+              Step View 2
+            </div>
+
+            <div
+              v-if="currenTab === 2"
+              class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
+            >
+              Step View 3
+            </div>
+
+            <div
+              v-if="currenTab === 3"
+              class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
+            >
+              Step View 4
+            </div>
+
+            <div
+              v-if="currenTab === 4"
+              class="w-full h-[600px] mt-5 shadow-xl border-gray-400 border-2 rounded-lg p-5 mb-2"
+            >
+              Step View 5
+            </div>
+            <div
+              class="flex lg:w-full text-[#E67E23] lg:ml-3 lg:mb-2 md:ml-1 md:mb-1"
+            >
+              <div class="flex text-lg font-semibold pl-3 custom-sm:my-4">
+                Comments:
+                <ChatBubbleLeftIcon
+                  class="h-[26px] w-[26px] ml-1 text-[#E67E23]"
+                />
               </div>
-              <br /><br />
             </div>
 
-            <div class="whitespace-break-spaces font-poppins">
-              <strong>Landmarks:</strong>
-              <div v-for="(landmark, index) in landmarks" :key="index">
-                <div v-if="!landmark == ''">⭐{{ landmark }}</div>
+            <div
+              class="flex lg:w-full md:w-[96%] overflow-auto bg-white rounded-md shadow-xl lg:p-3 lg:ml-5 lg:mb-6 md:p-3 md:ml-3 md:my-6 cursor-pointer hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.70)]"
+            >
+              <div class="flex ml-2 w-full">
+                <input
+                  type="text"
+                  placeholder="Leave a comment..."
+                  class="w-full border-b-2 pl-2 p3-1 focus:outline-none"
+                />
+                <a
+                  href=""
+                  class="flex items-center justify-center my-auto ml-1.5"
+                  ><PaperAirplaneIcon
+                    class="ml-1 mr-1 w-[25px] h-[25px] text-[#E67E23] hover:scale-110"
+                /></a>
               </div>
-              <br /><br />
             </div>
-
-            <div class="whitespace-break-spaces font-poppins">
-              <strong>Highlight:</strong>
-              <div v-for="(highlight, index) in highlights" :key="index">
-                <div v-if="!highlight == ''">⭐{{ highlight }}</div>
-              </div>
-              <br /><br />
-            </div>
-
-            <strong class="font-bold font-poppins">Broker:</strong> {{ broker
-            }}<br /><br />
-
-            <strong class="font-bold mb-10 font-poppins">Contact Info:</strong>
-            ☎️{{ contact_phone }}☎️{{ contact_telephone }}<br /><br />
-
-            <strong class="font-400 font-poppins">Email Address:</strong>
-            {{ email_address }}<br /><br />
-
-            <strong class="font-400 font-poppins">Key Tags:</strong>
-            {{ key_tags }}<br /><br />
+            <Comment
+              name="@Mikilabsyu143"
+              description="I held her close to me
+            'Cause I know she breaks so easily
+            And then I told her."
+            />
+            <Comment
+              name="@Mikilabsyu143"
+              description="But I knew no matter how I tried to console her
+            She'd just do the best she could
+            But there are times the best is no damn good"
+            />
+            <Comment
+              name="@Mikilabsyu143"
+              description="And no matter how you try to be kind
+            There's always still a part of you you leave behind
+            When it falls apart
+            There's no easy way to break somebody's heart"
+            />
           </div>
         </div>
       </div>
@@ -73,6 +137,11 @@
   </div>
 </template>
 <script setup>
+import { ref } from "vue";
+import Comment from "../components/Comment.vue";
+
+const currenTab = ref(0);
+
 defineProps({
   iframe: String,
   developer: String,

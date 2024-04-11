@@ -1,7 +1,7 @@
 <template>
   <div class="card card-side bg-base-100 rounded-md shadow-xl w-[80%] border-2">
-    <figure class="w-[70%] h-[100%]">
-      <img class="w-[100%] h-[100%]" :src="softeng" alt="Movie" />
+    <figure class="w-[70%] h-[100%] p-5">
+      <img class="w-[100%] h-[100%] rounded-md" :src="softeng" alt="Movie" />
     </figure>
     <div class="ml-[2%] mt-[3%]">
       <h2 class="card-title">{{ jobtitle }}Software Engineer</h2>

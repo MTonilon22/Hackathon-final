@@ -22,54 +22,10 @@
         class="md:hidden sm:hidden custom-sm:hidden xl:block lg:block lg:h-[700px] custom-sm:h-[700px] lg:w-[16%] flex-col overflow-auto ml-6"
       >
         <div class="h-[700px] flex-col overflow-auto">
-          <Accordion
-            title="Property Type"
-            :content="[
-              { type: 'radio', data: 'Buy' },
-              { type: 'radio', data: 'rent' },
-            ]"
-          />
-          <Accordion
-            title="Property Category"
-            :content="[
-              { type: 'checkbox', data: 'Commercial' },
-              { type: 'checkbox', data: 'Condo' },
-              { type: 'checkbox', data: 'House' },
-              { type: 'checkbox', data: 'Land' },
-              { type: 'checkbox', data: 'Townhouse' },
-            ]"
-          />
-          <Accordion
-            title="Location"
-            :content="[
-              { type: 'text', data: 'City' },
-              { type: 'text', data: 'Address' },
-              { type: 'text', data: 'Neighborhood' },
-              { type: 'text', data: 'Zipcode' },
-              { type: 'dialog', data: 'Philippines' },
-              { type: 'dialog', data: 'Cebu' },
-            ]"
-          />
-          <Accordion
-            title="Price"
-            :content="[
-              { type: 'text', data: '₱ _ _ _ _ _ _ _ _ _ _ _ _ ' },
-              { type: 'range', data: 'Cebu' },
-            ]"
-          />
-          <Accordion
-            title="Area"
-            :content="[
-              { type: 'text', data: 'Square Meter ' },
-              { type: 'range', data: 'Cebu' },
-            ]"
-          />
-          <Accordion
-            title="Rooms"
-            :content="[
-              { type: 'spinner', data: 'Bedroom' },
-              { type: 'spinner', data: 'Bathroom' },
-            ]"
+          <BlogOwner
+            :profile_picture="agent_profile"
+            :name="agent_name"
+            :property_number="agent_numberOfProperty"
           />
         </div>
       </div>
@@ -123,58 +79,7 @@
         </div>
         <div></div>
         <div>
-          <div clas="lg:w-[28%] md:w-[100%]">
-            <div
-              class="flex lg:w-full text-[#E67E23] lg:ml-3 lg:mb-2 md:ml-1 md:mb-1"
-            >
-              <div class="flex text-lg font-semibold pl-3 custom-sm:my-4">
-                Comments:
-                <ChatBubbleLeftIcon
-                  class="h-[26px] w-[26px] ml-1 text-[#E67E23]"
-                />
-              </div>
-            </div>
-            <div class="w-[95%] mx-auto">
-              <div
-                class="flex lg:w-full md:w-[96%] overflow-auto bg-white rounded-md shadow-xl lg:p-3 lg:ml-5 lg:mb-6 md:p-3 md:ml-3 md:my-6 cursor-pointer hover:shadow-[0_4px_4px_0px_rgba(0,0,0,0.70)]"
-              >
-                <div class="flex ml-2 w-full">
-                  <input
-                    type="text"
-                    placeholder="Leave a comment..."
-                    class="w-full border-b-2 pl-2 p3-1 focus:outline-none"
-                  />
-                  <a
-                    href=""
-                    class="flex items-center justify-center my-auto ml-1.5"
-                    ><PaperAirplaneIcon
-                      class="ml-1 mr-1 w-[25px] h-[25px] text-[#E67E23] hover:scale-110"
-                  /></a>
-                </div>
-              </div>
-
-              <!-- comments -->
-              <Comment
-                name="@Mikilabsyu143"
-                description="I held her close to me
-'Cause I know she breaks so easily
-And then I told her."
-              />
-              <Comment
-                name="@Mikilabsyu143"
-                description="But I knew no matter how I tried to console her
-She'd just do the best she could
-But there are times the best is no damn good"
-              />
-              <Comment
-                name="@Mikilabsyu143"
-                description="And no matter how you try to be kind
-There's always still a part of you you leave behind
-When it falls apart
-There's no easy way to break somebody's heart"
-              />
-            </div>
-          </div>
+          <div clas="lg:w-[28%] md:w-[100%]"></div>
         </div>
       </div>
     </div>
@@ -182,6 +87,7 @@ There's no easy way to break somebody's heart"
 </template>
 
 <script setup>
+import BlogOwner from "../components/BlogOwner.vue";
 import Accordion from "../components/Accordion.vue";
 import {
   NewspaperIcon,
@@ -189,7 +95,6 @@ import {
   PaperAirplaneIcon,
 } from "@heroicons/vue/24/outline";
 import Blog from "../components/Blog.vue";
-import Comment from "../components/Comment.vue";
 import BlogDetails from "../components/BlogDetails.vue";
 import { ref, onMounted, computed } from "vue";
 
