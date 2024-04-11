@@ -2,7 +2,7 @@
   <div class="h-screen">
     <div class="items-center justify-center flex cs:flex cs:flex-col">
       <div
-        class="items-center justify-center mx-auto flex text-secondary font-semibold tracking-widest"
+        class="items-center justify-center mx-auto flex text-[#2a2d57] font-semibold tracking-widest"
       ></div>
       <div
         class="lg:w-[100%] flex-col mx-auto cs:w-[100%] items-center justify-center flex lg:mt-[3%] cs:mt-[10%]"
@@ -10,13 +10,13 @@
         <div class="w-[100%] rounded-2xl sm:max-w-md xl:p-0">
           <div class="cs:px-5 lg:p-3 space-y-5 cs:w-[100%]">
             <h1
-              class="w-[100%] font-semibold leading-tight tracking-wide cs:text-2xl lg:text-3xl text-secondary md:text-2xl my-3"
+              class="w-[100%] font-semibold leading-tight tracking-wide cs:text-2xl lg:text-3xl text-[#2a2d57] md:text-2xl my-3"
             >
-              <span class="text-ternary tracking-wide">PointQuest</span>
-              Registration
+              <span class="text-ternary tracking-wide">Job Listing</span>
+              
             </h1>
-            <p1 class="text-secondary cs:text-sm tracking-wide"
-              >To register, please enter your credentials.</p1>
+            <p1 class="text-[#2a2d57] cs:text-sm tracking-wide"
+              >To list a job, please enter necessary credentials.</p1>
             <div class="space-y-5 lg:w-[100%]" action="#">
               <div
                 class="lg:flex-row cs:flex-col items-center justify-center lg:flex gap-5 w-[100%] cs:space-y-5"
@@ -24,7 +24,7 @@
                 <div class="w-[100%]">
                   <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-secondary"
+                    class="block mb-2 text-sm font-medium text-[#2a2d57]"
                     >Employer Name</label
                   >
                   <input
@@ -32,7 +32,7 @@
                     type="text"
                     
                    
-                    class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-[100%] p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-[100%] p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Michael Tonilon"
                     required=""
                   />
@@ -40,7 +40,7 @@
                 <div class="w-[100%]">
                   <label
                     
-                    class="block mb-2 text-sm font-medium text-secondary"
+                    class="block mb-2 text-sm font-medium text-[#2a2d57]"
                     >Salary</label
                   >
                   <input
@@ -48,7 +48,7 @@
                     type="text"
                  
                     
-                    class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-[100%] p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-[100%] p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="99999"
                     required=""
                   />
@@ -58,14 +58,14 @@
             <div>
               <label
                 for="email"
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Position</label
               >
               <input
                 v-model="position"
                 type="text"
                
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Web Developer"
                 required=""
               />
@@ -74,7 +74,7 @@
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Job Type</label
               >
               <input
@@ -82,14 +82,14 @@
                 type="text"
               
                 placeholder="On-Site"
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Experience</label
               >
               <input
@@ -97,14 +97,14 @@
                 type="text"
                 
                 placeholder="5 years"
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Job Title</label
               >
               <input
@@ -112,14 +112,14 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Job Description</label
               >
               <input
@@ -127,14 +127,14 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Skills</label
               >
               <input
@@ -142,7 +142,7 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
@@ -150,7 +150,7 @@
               <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Step 1</label
               >
               <input
@@ -158,14 +158,14 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Step 2</label
               >
               <input
@@ -173,14 +173,14 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Step 3</label
               >
               <input
@@ -188,14 +188,14 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Step 4</label
               >
               <input
@@ -203,14 +203,14 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Step 5</label
               >
               <input
@@ -218,7 +218,7 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
@@ -227,7 +227,7 @@
             <div>
               <label
                 
-                class="block mb-2 text-sm font-medium text-secondary"
+                class="block mb-2 text-sm font-medium text-[#2a2d57]"
                 >Location</label
               >
               <input
@@ -235,12 +235,12 @@
                 type="text"
                 
                 placeholder=""
-                class="bg-primary border font-500 border-gray-300 text-secondary sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-secondary dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-white border font-500 border-gray-300 text-[#2a2d57] sm:text-sm rounded-md focus:ring-ternary focus:border-ternary block w-full p-2.5 dark:placeholder-gray-400 dark:text-[#2a2d57] dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required=""
               />
             </div>
             <input  type="file" @change="handleFileImage">
-    <button class="bg-secondary px-5 py-2 rounded-lg text-white font-semibold text-sm" @click="addJob">SUBMIT</button>
+    <button class="bg-[#2a2d57] px-5 py-2 rounded-lg text-white font-semibold text-sm" @click="addJob">SUBMIT</button>
 
             <div class="flex gap-3 cs:w-[100%] cs:mx-auto">
               

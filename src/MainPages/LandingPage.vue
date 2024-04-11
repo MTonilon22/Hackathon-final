@@ -39,7 +39,7 @@
 
       <router-link to="/login">
         <button
-          class="w-[100%] transition duration-300 text-p text-secondary font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-8 py-2.5 text-center text-white bg-[#2a2d57]"
+          class="w-[100%] transition duration-300 text-p  font-500 tracking-wide bg-primary-600 focus:ring-primary-300 rounded-full text-sm px-8 py-2.5 text-center text-white bg-[#2a2d57]"
         >
           Login
         </button>
